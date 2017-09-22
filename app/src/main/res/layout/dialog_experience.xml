@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/editText_organization"
+        style="@style/et_view_cv"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/dialog_organization"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edittext_rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:maxLines="7"
+        android:layout_margin="5dp"
+        android:background="@drawable/project_border_textview_green_light"
+        android:gravity="start"
+        android:hint="@string/work_scope"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_exp_start_date"
+        style="@style/et_view_cv"
+        android:gravity="start|center_vertical"
+        android:hint="@string/start_date"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:textColor="#000"
+            android:id="@+id/textView_exp_end_date"
+            android:background="@drawable/project_border_textview_green_light"
+            android:gravity="start|center_vertical"
+            android:hint="@string/end_date"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/current_working"
+            android:layout_below="@+id/textView_exp_end_date"
+            android:text="@string/Current_working"
+            android:gravity="start|center_vertical"
+            android:src="@drawable/ic_refresh_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_post_exp"
+            android:layout_marginRight="10dp"
+            style="@style/dialog_btn"
+            android:text="@string/Upload" />
+
+        <!-- Record video button -->
+
+        <Button
+            android:id="@+id/btn_dismiss_exp"
+            android:layout_marginLeft="10dp"
+            style="@style/dialog_btn"
+            android:text="@string/Cancel1" />
+    </LinearLayout>
+</LinearLayout>

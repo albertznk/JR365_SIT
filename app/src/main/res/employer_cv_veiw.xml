@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/cvSwiper" android:layout_height="match_parent"
+    android:layout_width="match_parent" android:orientation="vertical" xmlns:android="">
+
+    <ProgressBar android:id="@+id/progressBar" android:layout_centerInParent="true"
+        android:layout_height="wrap_content" android:layout_width="match_parent" />
+
+    <ScrollView android:id="@+id/scroll_layout" android:layout_height="match_parent"
+        android:layout_marginBottom="10dp" android:layout_marginTop="5dp"
+        android:layout_width="match_parent">
+
+        <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout android:gravity="end" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:layout_width="0dp">
+
+                    <ImageView android:gravity="center" android:id="@+id/em_Img"
+                        android:layout_height="90dp" android:layout_width="90dp" />
+                </LinearLayout>
+
+
+                <LinearLayout android:layout_height="80dp" android:layout_weight="2"
+                    android:layout_width="0dp" android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView android:id="@+id/em_Name" android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:textSize="14sp" />
+
+                    <TextView android:id="@+id/em_Mobile" android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:textSize="14sp" />
+
+
+                    <TextView android:id="@+id/ed_gmail" android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_height="wrap_content" android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                    android:layout_weight="1.5" android:layout_width="0dp">
+
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp" android:layout_weight="1"
+                        android:layout_width="0dp" android:orientation="vertical">
+
+                        <TextView android:layout_height="40dp" android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:text="@string/cv_father_name" />
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_gender" />
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_nrc_no" />
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_date_of_Birth" />
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_address" />
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_township" />
+
+                        <!--    <TextView
+                                style="@style/cv_view_responsive"
+                                android:text="@string/cv_Postal_Code" />-->
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_Nationality" />
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_Religion" />
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_martial_status" />
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_current_Position" />
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_desire_Position" />
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_driving_license" />
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_city" />
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_expected_salary" />
+
+                        <TextView style="@style/cv_view_responsive"
+                            android:text="@string/cv_country" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" android:layout_marginTop="5dp"
+                    android:layout_weight="1.5" android:layout_width="0dp"
+                    android:orientation="vertical">
+
+                    <TextView style="@style/cv_view_responsive"
+                        android:id="@+id/emFatherName_workCode" />
+
+
+                    <TextView style="@style/cv_view_responsive" android:id="@+id/genderEdit" />
+
+                    <TextView style="@style/cv_view_responsive" android:id="@+id/emNRC_WorkCode" />
+
+                    <TextView style="@style/cv_view_responsive" android:id="@+id/emDate" />
+
+                    <TextView style="@style/cv_view_responsive" android:id="@+id/addressEdit" />
+
+                    <TextView style="@style/cv_view_responsive" android:id="@+id/township_edit" />
+
+                    <TextView style="@style/cv_view_responsive" android:id="@+id/ed_national" />
+
+                    <TextView style="@style/cv_view_responsive" android:id="@+id/ed_religion" />
+
+                    <TextView style="@style/cv_view_responsive" android:id="@+id/ed_marital" />
+
+                    <TextView style="@style/cv_view_responsive"
+                        android:id="@+id/ed_current_position" />
+
+                    <TextView style="@style/cv_view_responsive"
+                        android:id="@+id/ed_desire_position" />
+
+                    <TextView style="@style/cv_view_responsive"
+                        android:id="@+id/ed_drivingLicense" />
+
+                    <TextView style="@style/cv_view_responsive" android:id="@+id/ed_city_id" />
+
+                    <TextView style="@style/cv_view_responsive" android:id="@+id/ed_salary" />
+
+                    <TextView style="@style/cv_view_responsive" android:id="@+id/countryEdit" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/view_bar" />
+
+
+            //education
+
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView android:layout_height="wrap_content" android:layout_marginLeft="25dp"
+                    android:layout_width="match_parent" android:text="@string/cv_education" />
+
+                <TextView android:id="@+id/list_em_Edu" android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp" android:layout_width="match_parent"
+                    android:text="Bla Bla" />
+            </LinearLayout>
+
+            <View style="@style/view_bar" />
+            //qualification
+
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView android:layout_height="wrap_content" android:layout_marginLeft="25dp"
+                    android:layout_width="match_parent" android:text="@string/cv_qualification" />
+
+                <TextView android:id="@+id/em_Qualification" android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp" android:layout_width="match_parent" />
+            </LinearLayout>
+
+
+            <View style="@style/view_bar" />
+            //work_exp
+
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView android:layout_height="wrap_content" android:layout_marginLeft="25dp"
+                    android:layout_width="match_parent" android:text="@string/cv_Work_Experience" />
+
+                <TextView android:id="@+id/em_WorkingExperience"
+                    android:layout_height="wrap_content" android:layout_marginLeft="50dp"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <View style="@style/view_bar" />
+
+            //language
+
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView android:layout_height="wrap_content" android:layout_marginLeft="25dp"
+                    android:layout_width="match_parent" android:text="@string/cv_Language" />
+
+                <TextView android:id="@+id/em_language" android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp" android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <View style="@style/view_bar" />
+
+            <RelativeLayout android:layout_height="90dp" android:layout_width="match_parent">
+                <Button android:id="@+id/callBTN" android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" android:layout_height="40dp"
+                    android:layout_width="80dp" android:text="CALL" />
+                <Button android:id="@+id/smsBTN" android:layout_centerVertical="true"
+                    android:layout_height="40dp" android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/callBTN" android:layout_width="80dp"
+                    android:text="SMS" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

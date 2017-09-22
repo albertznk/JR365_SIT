@@ -1,0 +1,330 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+
+    <style name="employer_postjob_boxStyle">
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/project_border_textview_green_light</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_alignLeft">@+id/bnpSpinner</item>
+        <item name="android:layout_alignRight">@id/bnpSpinner</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="employer_postjob_textStyle">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignStart">@+id/txtv1</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="employer_postjob_requriementStyle">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="BrandedSwitch.control" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="dialog_btn">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_plain</item>
+    </style>
+
+    <style name="modify_btn">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_plain</item>
+    </style>
+
+    <style name="tab_style">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="dash_row_style">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_toRightOf">@+id/employer_logo</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="cv_employee">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_marginLeft">32dp</item>
+    </style>
+
+
+    <style name="cv_view_responsive">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="search_styl">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#50B748</item>
+    </style>
+
+
+    <style name="img_view_cv">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">50dp</item>
+
+    </style>
+
+    <style name="dialog_box_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/project_border_textview_green_light</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:inputType">textPersonName</item>
+
+
+    </style>
+
+    <style name="et_view_cv">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/project_border_textview_green_light</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+
+    <style name="view_bar">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#50B748</item>
+    </style>
+
+    <style name="dialog_text_view">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/project_border_textview_green_light</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+
+
+    </style>
+
+    <style name="move_view">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1.5dp</item>
+        <item name="android:background">#50B748</item>
+    </style>
+
+    <!--<style name="cv_regist">-->
+    <!--<item name="android:background">@drawable/regist_frame</item>-->
+    <!--<item name="android:textSize">14sp</item>-->
+    <!--<item name="android:textColor">#000</item>-->
+    <!--<item name="android:gravity">center_vertical</item>-->
+    <!--<item name="android:textStyle">bold</item>-->
+    <!--<item name="android:paddingLeft">20dp</item>-->
+    <!--<item name="android:layout_width">match_parent</item>-->
+    <!--<item name="android:layout_height">50dp</item>-->
+    <!--<item name="android:layout_toRightOf">@+id/no_icon</item>-->
+    <!--<item name="android:layout_margin">5dp</item>-->
+    <!--</style>-->
+
+    <style name="btn_resume">
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/btn_plain</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!--<style name="job_detail_show">-->
+    <!--<item name="android:gravity">center</item>-->
+    <!--<item name="android:textColor">#000</item>-->
+    <!--<item name="android:textSize">14sp</item>-->
+    <!--<item name="android:layout_width">wrap_content</item>-->
+    <!--<item name="android:layout_height">30dp</item>-->
+    <!--<item name="android:layout_alignEnd">@+id/jobLogo</item>-->
+    <!--</style>-->
+
+    <!--<style name="Job_Detail_WorkCode">-->
+    <!--<item name="android:textSize">14sp</item>-->
+    <!--<item name="android:textColor">#000</item>-->
+    <!--<item name="android:gravity">center</item>-->
+    <!--<item name="android:layout_alignLeft">@id/d1</item>-->
+    <!--<item name="android:layout_height">30dp</item>-->
+    <!--<item name="android:layout_width">wrap_content</item>-->
+    <!--</style>-->
+
+    <style name="Company_Detail">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignEnd">@+id/setCompanyLogo</item>
+    </style>
+
+    <style name="Set_Company_Detail">
+        <item name="android:layout_alignLeft">@+id/empCompanyName</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_width">wrap_content</item>
+
+    </style>
+<!--
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gradient</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+    </style>-->
+
+    <style name="applied_row_list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RadioButtonStyle" parent="@android:style/Widget.CompoundButton">
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="more_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="KO_Daw_Layout">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="employer_Tab_Txt_Style">
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorPrimary">@color/greendark</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+
+    </style>
+
+
+
+    <style name="cv_regist">
+        <item name="android:background">@drawable/regist_frame</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_toRightOf">@id/no_icon</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+
+    <style name="job_detail_show">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_alignLeft">@+id/empOpenJobLogo</item>
+    </style>
+
+    <style name="Job_Detail_WorkCode">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_alignLeft">@+id/empJobCategory</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+
+
+
+</resources>
+
+

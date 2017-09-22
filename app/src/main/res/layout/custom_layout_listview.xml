@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/organization"
+            android:textColor="#000"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="Organization" />
+
+        <TextView
+            android:id="@+id/work_scope"
+            android:layout_below="@+id/organization"
+            android:textColor="#000"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Work Scope"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/work_exp_start_date_tv"
+            android:layout_below="@+id/tv2"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Start Date" />
+
+        <TextView
+            android:id="@+id/work_exp_end_date_tv"
+            android:layout_below="@+id/work_exp_start_date_tv"
+            android:textColor="#000"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="End Date" />
+
+
+        <TextView
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/edit_work"
+            android:layout_toRightOf="@+id/organization"
+            android:textColor="#000"
+            android:id="@+id/tv1"
+            android:maxLength="99"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_toRightOf="@+id/work_scope"
+            android:layout_below="@+id/tv1"
+            android:textColor="#000"
+            android:layout_toLeftOf="@+id/edit_work"
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_below="@+id/tv2"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:layout_toLeftOf="@+id/edit_work"
+            android:layout_toRightOf="@id/work_exp_start_date_tv"
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="C" />
+
+        <TextView
+            android:layout_toRightOf="@+id/work_exp_end_date_tv"
+            android:layout_below="@+id/tv3"
+            android:textColor="#000"
+            android:id="@+id/tv4"
+            android:layout_toLeftOf="@+id/edit_work"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="D" />
+
+
+    <ImageView
+        android:layout_toLeftOf="@+id/delete"
+        android:id="@+id/edit_work"
+        android:layout_width="50dp"
+        android:layout_weight="1"
+        android:layout_marginRight="15dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_create_black_24dp" />
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/delete"
+        android:layout_width="50dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:src="@mipmap/fuck_off" />
+
+</RelativeLayout>

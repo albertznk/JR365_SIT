@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JobReady365</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_jpolicy">JPolicy</string>
+    <string name="btn_agree">သေဘာတူသည္</string>
+    <string name="title_activity_jsign_up">JSignUpActivity</string>
+    <string name="title_activity_jresume">JResumeActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_jlogin">JLoginActivity</string>
+    <string name="title_activity_jdashboard">JDashboard</string>
+    <string name="title_activity_jdashboard_applied">JDashboardApplied</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="employer">အလုပ္သမား</string>
+    <string name="employee">အလုပ္ရွင္</string>
+    <string name="login">အေကာင့္၀င္ရန္</string>
+    <string name="SignUp">အေကာင့့္ဖြင့္ရန္</string>
+    <string name="Employer">အလုပ္ရွင္</string>
+    <string name="Employee">အလုပ္သမား</string>
+    <string name="Registration">မွတ္ပံုတင္ရန္</string>
+   <string name="error_length_password">စကား၀ွက္သည္အနည္းဆုံးေျခာက္လုံးျဖစ္ရပါမည္</string>
+
+    <string name="title_home">Home</string>
+    <string name="search_jobs">Search Jobs</string>
+    <string name="title_browse_jobs">Browse Jobs</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_search">Search</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_appointment">Appointment</string>
+    <string name="title_view_cv">View CV</string>
+    <string name="appointment">Appointment</string>
+    <string name="logout">Logout</string>
+    <string name="applied_jobs">Applied Jobs</string>
+
+    <string name="Current_working">အလုပ္လုပ္ေနသည္။</string>
+    <string name="Company_Profile">လုပ္ငန္းအေၾကာင္း　</string>
+
+    <string name="title_notifications">Notifications</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="desire_position">Desire Position <font color="red">*</font></string>
+    <string name="full_name">Full name <font color="red">*</font></string>
+    <string name="nrc_number">N.R.C Number <font color="red">*</font></string>
+    <string name="father_name">Father Name <font color="red">*</font></string>
+    <string name="nationality">Nationality <font color="red">*</font></string>
+    <string name="current_position">Current Position <font color="red">*</font></string>
+    <string name="date_of_birth">Date of Birth <font color="red">*</font></string>
+    <string name="expected_salary">Expected Salary <font color="red">*</font></string>
+    <string name="enter_phone_nr">Enter Phone Number</string>
+    <string name="policy_and_agreement">Policy &amp; Agreement</string>
+
+    <string-array name="spin_religion">
+        <!--<item>ကိုးကြယ္သည့္ဘာသာ </item>-->
+        <item>ဗုဒၶဘာသာ</item>
+             
+        <item>ခရစ္ယာန္</item>
+               
+        <item>အစၥလာမ္</item>
+        <item>အျခား</item>
+        <item>ဟိနၵဴ</item>
+               
+    </string-array>
+
+    <string-array name="spin_marital_status">
+        <!--<item>အိမ္ေထာင္ရွိမရွိ </item>-->
+        <item>Single</item>
+             
+        <item> Married</item>
+               
+        <item>In Relationship</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string name="call">ေခၚရန္</string>
+    <string name="sms">စာပို႔ရန္</string>
+
+    <string name="cv_download">CV　Download</string>
+
+    <string-array name="state_division">
+        <item>State/Division <font color="red">*</font></item>
+        <item></item>
+             
+        <item>Ayeyarwaddy</item>
+               
+        <item>Yangon</item>
+        <item>Ayeyarwaddy</item>
+        <item>Bago</item>
+    </string-array>
+
+
+    <string name="Phone_Number">ဖုန္းနံပါတ္</string>
+    <string name="Password">စကား၀ွက္</string>
+    <string name="Verify_Password">ထပ္မံအတည္ျပဳသည္</string>
+
+    <string name="Login_Mobile">ဖုန္းနံပါတ္</string>
+    <string name="Login_Password">စကား၀ွက္</string>
+
+    <string name="Forget">စကား၀ွက္ေမ့လွ်င္</string>
+    <string name="Sing_up">အသစ္ဖြင့္ရန္</string>
+
+    <string name="Login">၀င္ရန္</string>
+
+
+    <string name="employer_search">၀န္ထမ္းရွာရန္</string>
+
+    //Dashboard
+
+
+    <string name="dash_search">ရွာရန္</string>
+    <string name="CV">ကိုယ္ေရးအက်ဥ္း</string>
+    <string name="dash_dashboard">ပင္မစာမ်က္ႏွာ</string>
+
+    <string name="toolbar_More">အျခား</string>
+    <string name="toolbar_search">ရွာရန္</string>
+    <string name="toolbar_cv">ကိုယ္ေရးမွတ္တမ္း</string>
+    <string name="toolbar_dashboard">အလုပ္သမားပင္မစာမ်က္ႏွာ</string>
+
+
+    //for CV myanmar
+
+    <string name="cv_father_name">အဖအမည္</string>
+    <string name="cv_gender">က်ား/မ <font color="red">*</font></string>
+    <string name="gender">က်ား/မ </string>
+    <string name="cv_nrc_no">မွတ္ပံုတင္နံပါတ္</string>
+    <string name="cv_Place_of_Birth">ေမြးရပ္</string>
+    <string name="cv_date_of_Birth">ေမြးေန႔</string>
+    <string name="cv_address">လိပ္စာ</string>
+    <string name="cv_township">ျမိဳ႕နယ္</string>
+    <string name="cv_Postal_Code">စာတိုက္ကုဒ္</string>
+    <string name="cv_Nationality">ႏိုင္ငံသား</string>
+    <string name="cv_Religion">ကိုးကြယ္သည့္ဘာသာ</string>
+    <string name="cv_martial_status">အိမ္ေထာင္ရွိ/မရွိ</string>
+    <string name="cv_current_Position">လက္ရွိရာထူး</string>
+    <string name="cv_desire_Position">လုပ္ခ်င္သည့္ရာထူး</string>
+    <string name="cv_driving_license">ယာဥ္ေမာင္းလိုင္စင္</string>
+    <string name="cv_city">ျပည္နယ္/တိုင္း</string>
+    <string name="cv_expected_salary">ေမွ်ာ္မွန္းလစာ</string>
+    <string name="cv_country">ႏိုင္ငံ</string>
+    <string name="cv_create_at">စတင္ျဖည့္သည့္ရက္</string>
+    <string name="cv_update_at">ျပင္ဆင္ခ့ဲသည့္ရက္</string>
+
+
+    <string name="cv_education">ပညာအရည္အခ်င္း</string>
+    <string name="cv_qualification">အျခားအရည္အခ်င္းမ်ား</string>
+
+    <string name="cv_Work_Experience">အလုပ္အေတြ႕အၾကံဳ</string>
+    <string name="cv_Language">ဘာသာစကား</string>
+
+    <string name="cv_view_yes">လုပ္မယ္</string>
+    <string name="cv_vies_no">မလုပ္ဘူး</string>
+
+
+    //for Appointment
+    <string name="more_appointment">အလုပ္ခ်ိန္းဆိုမႈ</string>
+    <string name="more_log_out">ထြက္ရန္</string>
+    <string name="more_applyjob">ေလွ်ာက္ထားခ့ဲေသာအလုပ္မ်ား</string>
+    <string name="more_change_language">ဘာသာစကား</string>
+
+    <string name="more_registered_mobile_no">စာရင္းသြင္းထားေသာနံပါတ္</string>
+    <string name="more_Policy">မူ၀ါဒႏွင့္သေဘာတူညီခ်က္</string>
+    <string name="more_Feedback">အၾကံျပဳခ်က္</string>
+    <string name="upgrade_history">၀ယ္ယူမႈမွတ္တမ္း</string>
+    <string name="topup_histroy">ေငြျဖည့္မွတ္တမ္း</string>
+
+
+    //new
+    <string name="update_job_title">ျပင္ဆင္မႈျပီးျပီလား</string>
+    <string name="update_job_message">ျပင္ဆင္မႈျပီးလွ်င္ Ok ကိုႏွိပ္ပါ</string>
+
+    <string name="delete_company">လုပ္ငန္းဖ်က္သိမ္းမွာလား</string>
+    <string name="delete_job">အလုပ္ေခၚမႈ　ဖ်က္သိမ္းမွာလား</string>
+    <string name="attach_company_logo">လုပ္ငန္းအမွတ္တံဆိပ္တြဲရန္</string>
+    <string name="Requirement">လိုအပ္ခ်က္မ်ား<font color="red">*</font></string>
+
+    <string name="relevant_job">ဆက္စပ္ေသာအလုပ္မ်ား</string>
+
+    <string name="male">က်ား</string>
+    <string name="female">မ</string>
+    <string name="unisex">က်ား/မ</string>
+    <string name="send">ပို္႔မည္</string>
+    <string name="not_send">မပို္႔ပါ</string>
+    <string name="send_cv">သင့္အခ်က္အလက္အား ယခုလုပ္ငန္းရွင္ထံသို႔ပို႔မည္</string>
+    <string name="choose_from_gallery">ေရြးခ်ယ္မည္</string>
+    <string name="take_your_photo">ဓာတ္ပံု</string>
+    <string name="take_your_photo1">ဓာတ္ပံုရိုက္မည္</string>
+
+    <string name="job_category">အလုပ္ေခါင္းစဥ္</string>
+    <string name="job_title">လိုအပ္ေသာရာထူး<font color="red">*</font></string>
+
+    <string name="require_field_are_missing">လိုအပ္ေသာအခ်က္အလက္မျပည့္စံုပါ</string>
+
+    //for show job detail
+
+    <string name="job_detail_job_type">      အလုပ္အမ်ိဳးအစား   </string>
+    <string name="job_detail_gender">           က်ား/မ</string>
+    <string name="job_detail_male_post">        က်ား</string>
+    <string name="job_detail_female_post">     မ</string>
+    <string name="job_detail_salary">           လစာ</string>
+    <string name="job_detail_language">         ဘာသာစကား</string>
+    <string name="job_detail_job_location">     ရံုးလိပ္စာ</string>
+    <string name="job_detail_graduate">         ဘြဲ႕</string>
+    <string name="job_detail_martial_status">  အိမ္ေထာင္မရွိ</string>
+    <string name="job_detail_age_limit">        အသက္ </string>
+    <string name="job_detail_accomodation">     ေနစရာစီစဥ္ေပးမႈ</string>
+    <string name="job_detail_Food">             စားစရာစီစဥ္ေပးမႈ</string>
+    <string name="job_detail_ferry">            ၾကိဳပို႔</string>
+    <string name="job_detail_traiing">          ေလ့က်င့္ေပးမႈ</string>
+    <string name="job_detail_description">      ေဖာ္ျပခ်က္မ်ား<font color="red">*</font></string>
+    <string name="job_detail_work_exp">         အလုပ္အေတြ႕အၾကံဳ/လိုအပ္ခ်က္မ်ား</string>
+    <string name="job_detailsummary">           လိုအပ္ေသာအခ်က္အလက္မ်ား</string>
+    <string name="job_detail_apply">            ေလွ်ာက္ရန္</string>
+    <string name="description"> ေဖာ္ျပခ်က္မ်ား</string>
+    <string name="no_start_description"> ေလ့က်င့္ေပးမႈ</string>
+
+    //for language_row
+    <string name="language_row_language">ဘာသာစကား</string>
+    <string name="language_row_reading_lvl">အေျပာစြမ္းရည္</string>
+    <string name="language_row_writing_lvl">အေရးစြမ္းရည္</string>
+
+    //search_job
+    <string name="search_search">ရွာမည္</string>
+    <string name="search_hint">အလုပ္ရွာေဖြျခင္း</string>
+
+    //for applied job myanmar
+
+    <string name="applied_job_job_title">   အလုပ္      :         </string>
+    <string name="applied_job_Company_Name">            လုပ္ငန္းနာမည္ :             </string>
+    <string name="applied_job_Applied_Date">             ေလွ်ာက္ခ့ဲသည့္ရက္:      </string>
+    <string name="applied_job_Close_Date">              ေလွ်ာက္လႊာပိတ္မည့္ရက္:       </string>
+
+    //for resume
+    <string name="Ma">မ</string>
+    <string name="Ms">Ms</string>
+    <string name="U">ဦး</string>
+    <string name="Mr">Mr</string>
+    <string name="Daw">ေဒၚ</string>
+    <string name="Ko">ကို</string>
+
+    <string name="applied_text">ေလွ်ာက္ထားေသာအလုပ္မရွိပါ</string>
+    <string name="appointment_text">ခ်ိန္းဆိုမႈမရွိပါ</string>
+    <string name="required_field">လိုအပ္ေသာအခ်က္အလက္မျပည့္စံုပါ</string>
+
+    <string name="hide_cv">ကိုုယ္ေရးအခ်က္အလက္လွ်ိုဳ႕၀ွက္မည္</string>
+    <string name="hide_cv_extension">သင္၏ကိုယ္ေရးအခ်က္အလက္ မ်ားအား လ်ွိဳ ႔ဝွက္မည္ \n
+        (သေဘာတူပါက သင္၏အခ်က္အလက္ မ်ားအားအျခားအလုပ္ရွင္မွရွာေဖြမရပါ၊ သင္ေလၽွာက္ထား ေသာအလုပ္ရွင္ မွသာ ေတြ႔ ျမင္နိုင္သည္</string>
+    <string name="resume_religion"> ကိုးကြယ္သည့္ဘာသာ</string>
+    <string name="resume_martital_Status">အိမ္ေထာင္ေရး *</string>
+    <string name="resume_desired_position">ေလွ်ာက္ထားလိုသည့္ရာထူး *</string>
+
+    <string name="resume_take_your_photo">          ဓာတ္ပံု <font color="red">*</font></string>
+    <string name="resume_full_name">                နာမည္ <font color="red">*</font></string>
+    <string name="resume__nrc">                     မွတ္ပံုတင္နံပါတ္ <font color="red">*</font></string>
+    <string name="resume_dob">                      ေမြးေန႔ <font color="red">*</font></string>
+    <string name="resume__father_name">             အဖအမည္ <font color="red">*</font></string>
+    <string name="resume_nationality">              ႏိုင္ငံသား <font color="red">*</font></string>
+    <string name="resume_current_position">         လက္ရွိရာထူး </string>
+    <string name="resume_driving_license">          ယာဥ္ေမာင္းလိုင္စင္ </string>
+    <string name="resume_phone_number">             ဆက္သြယ္ရန္ဖုန္း <font color="red">*</font></string>
+    <string name="resume_email">                    အီးေမးလ္ </string>
+    <string name="resume_unit_no_street">           လိပ္စာ </string>
+    <string name="resume_education">                ပညာေရး <font color="red">*</font></string>
+    <string name="resume_no_formal_edu">           ျဖည့္စြက္ရန္မရွိပါက　</string>
+    <string name="resume_qualification">            အျခားအရည္အခ်င္းမ်ား </string>
+    <string name="resume_work_exp">                 လုပ္ငန္းအေတြ႕အၾကံဳ</string>
+    <string name="resume_language">                 ဘာသာစကား </string>
+    <string name="resume_expected_salary">          ေမွ်ာ္မွန္းလစာ <font color="red">*</font></string>
+    <string name="resume_attach_cv">                ကိုယ္ပိုင္CVတြဲမည္ </string>
+    <string name="resume_add">                      ထည့္ရန္ </string>
+    <string name="resume_upload">                   တင္ရန္ </string>
+    <string name="resume_submit">                   အတည္ျပဳသည္ </string>
+    <string name="dl_yes">ရွိ</string>
+    <string name="dl_no">မရွိ</string>
+    <string name="hide_cv_yes">လုပ္</string>
+    <string name="hide_cv_no">မလုပ္</string>
+
+
+    //for common employee
+    <string name="remaintime">လက္က်န္အခ်ိန္</string>
+    <string name="exit">ထြက္ရန္</string>
+    <string name="logout_exit">အေကာင့္　ထြက္မွာလား　?</string>
+    <string name="no_job_found">လိုခ်င္ေသာရာထူးႏွင့္ကိုက္ညီေသာအလုပ္မရွိပါ</string>
+    <string name="Address">လိပ္စာ <font color="red">*</font></string>
+    <string name="spoken_lvl">စကားေျပာစြမ္းရည္(Good,Excellent,Fair)</string>
+    <string name="write_lvl">အေရးအသားစြမ္းရည္(Good,Excellent,Fair)</string>
+    <string name="Language">ဘာသာစကား</string>
+    <string name="image_to_upload">ပံုတင္ရန္</string>
+    <string name="university">တကၠသိုလ္</string>
+    <string name="Degree">ဘြဲ႕</string>
+    <string name="education">ပညာေရး</string>
+    <string name="loading">ေခတၱေစာင့္ပါ</string>
+    <string name="Uploading">ဖိုင္ပို႔ေနသည္</string>
+    <string name="Searching">ရွာေနသည္</string>
+    <string name="job_success">အလုပ္ ေလွ်ာက္ထားမႈ ေအာင္ျမင္သည္</string>
+    <string name="Log_in">အေကာင့္၀င္ေနသည္</string>
+    <string name="Check_connection">လို္ငးမေကာင္းပါ</string>
+
+    <string name="edu_start_Date">စတင္သည့္ရက္ <font color="red">*</font></string>
+    <string name="edu_end_Date">ျပီးဆံုးသည့္ရက္ <font color="red">*</font></string>
+    <string name="start_date">စတင္သည့္ရက္</string>
+    <string name="end_date">ျပီးဆံုးသည့္ရက္</string>
+    <string name="center_name">သင္တန္းနာမည္</string>
+    <string name="course">သင္ရိုး</string>
+
+    //for common employer
+    <string name="View">            ၾကည့္ရန္  </string>
+    <string name="Delete">          ဖ်က္ရန္  </string>
+    <string name="Add">            ထည့္ရန္  </string>
+    <string name="Upgrade">        ျမွင့္ရန္  </string>
+    <string name="Save">            သိမ္းရန္  </string>
+    <string name="empr_dashboard">  ပင္မစာမ်က္ႏွာ </string>
+    <string name="Post_Job">        အလုပ္တင္ရန္  </string>
+    <string name="Shortlisted">     ေရြးခ်ယ္ထားသူမ်ား  </string>
+    <string name="Search">          ရွာရန္  </string>
+    <string name="More">            အျခား  </string>
+    <string name="Business_Name">   လုပ္ငန္းအမည္  <font color="red">*</font></string>
+    <string name="Edit">            ျပင္ရန္  </string>
+    <string name="Candidate">       သက္ဆိုင္သည့္၀န္ထမ္းမ်ား  </string>
+    <string name="Back">            ေနာက္သို႔            </string>
+    <string name="Upload">          တင္ရန္        </string>
+    <string name="no_start_Business_Name">   လုပ္ငန္းအမည္ </string>
+
+ //for employer search
+   <string name="search_empr">၀န္ထမ္းရွာေဖြျခင္း</string>
+
+
+    //for Employer Dashboard
+
+    <string name="empr_Job_Opening">    အလုပ္ေခၚစာ         </string>
+    <string name="Candidate_Count">     ေလွ်ာက္ထားသူဦးေရ     </string>
+
+    //post job
+    <string name="title">ရာထူး<font color="red">*</font></string>
+    <string name="qualification_post_job_hint">ဥပမာ-တကၠသိုလ္တစ္ခုခုမွဘြဲ႕ရျဖစ္ရမည္</string>
+    <string name="requirement_post_job_hint">ဥပမာ-လုပ္သက္အနည္းဆံုး၃ႏွစ္ရွိရမည္</string>
+    <string name="description_post_job_hint">ဥပမာ-အလုပ္ခ်ိန္　မနက္　၉　နာရီမွ　ညေန　၅　နာရီအထိ</string>
+    <string name="Max_age">Max Age<font color="red">*</font></string>
+    <string name="Min_age">Min Age<font color="red">*</font></string>
+    <string name="search_job_employee">အလုပ္တင္ထားျခင္းမရွိေသးပါ</string>
+    <string name="upgrade_package_upgrade">　ျမွင့္ရန္                </string>
+    <string name="upgrade_package_cancel">        မျမွင့္ပါ          </string>
+
+    //cancel
+    <string name="Cancel">မလုပ္ပါ</string>
+    <string name="Cancel1">မတင္ပါ</string>
+
+    //for Employer Postjob
+    <string name="post_Position">       ရာထူး  </string>
+    <string name="post_Qualification">  အျခားအရည္အခ်င္း  </string>
+    <string name="post_Quantity">       ဦးေရ  </string>
+    <string name="post_work_exp">       အလုပ္အေတြ႕အၾကံဳ  </string>
+    <string name="post_language_skill"> ဘာသာစကား  </string>
+    <string name="post_address">        လိပ္စာ  </string>
+    <string name="post_graduated">      ဘြဲ႕ရ/မရ  </string>
+    <string name="post_martial_status"> အိမ္ေထာင္ရွိ/မရွိ  </string>
+    <string name="post_accommodation">  ေနစရာစီစဥ္ေပးျခင္း  </string>
+    <string name="post_food">           စားေသာက္စီစဥ္ေပးျခင္း  </string>
+    <string name="post_transprtation">  ၾကိဳ႕/ပို႔  </string>
+    <string name="post_training">       ေလ့က်င့္ေပးမႈ  </string>
+    <string name="post_mini">           အနည္းဆံုးအသက္  </string>
+    <string name="post_max">            အမ်ားဆံုးအသက္  </string>
+    <string name="post_description">    ေဖာ္ျပခ်က္  </string>
+    <string name="post_to">             မွ  </string>
+
+    //for post company
+    <string name="post_c_name">         လုပ္ငန္းအမည္ </string>
+    <string name="post_c_Telephone">    ဖုန္းနံပါတ္ <font color="red">*</font></string>
+    <string name="post_c_TTelephone">    ဖုန္းနံပါတ္  </string>
+    <string name="post_c_email">        အီးေမးလ္ </string>
+    <string name="post_c_address">      လိပ္စာ<font color="red">*</font> </string>
+    <string name="post_c_pri_person">   ဦးစားေပးဆက္သြယ္ရန္ <font color="red">*</font></string>
+    <string name="post_c_sec_person">   ဒုတိယဆက္သြယ္ရန္ </string>
+    <string name="post_c_about">         လုပ္ငန္းအေၾကာင္း </string>
+    <string name="post_c_logo">          လုပ္ငန္းတံဆိပ္ </string>
+    <string name="post_c_new_post">     အခုအလုပ္တင္/မတင္ </string>
+    <string name="no_start_c_pri_person">   ဦးစားေပးဆက္သြယ္ရန္    </string>
+    <string name="no_c_Telephone">    ဖုန္းနံပါတ္        </string>
+
+    //start 14.7.2017
+
+    //for employer DashBoard
+    <string name="Employer_Dash">အလုပ္ရွင္ပင္မစာမ်က္ႏွာ</string>
+    <string name="Employer_Job_post">အလုပ္အသစ္ေခၚရန္</string>
+    <string name="Employer_Search">ရွာရန္</string>
+    <string name="Employer_More">အျခား</string>
+    <string name="Employer_shortlist">ေရြးခ်ယ္ထားသူမ်ား</string>
+
+    //for employee
+    <string name="Apply">ေလွ်ာက္ရန္</string>
+    <string name="Job_Industry">အလုပ္စက္ရံု</string>
+    <string name="Job_Count">အလုပ္အေရအတြက္</string>
+    <string name="Quilification">လိုအပ္ေသာအရည္အခ်င္းမ်ား<font color="red">*</font></string>
+    <string name="Modify">ျပင္ဆင္ရန္</string>
+    <string name="company_about">အေသးစိပ္</string>
+    <string name="Business_Type">လုပ္ငန္းအမ်ိဳးအစား</string>
+    <string name="employee_job_type">အလုပ္အမ်ိဳးအစား</string>
+    <string name="salary_range">လစာ(က်ပ္ေငြ)</string>
+    <string name="age_limit">အသက္</string>
+    <string name="Work_Experience_Requirement">အလုပ္အေတြ႕အၾကံဳ/လိုအပ္ခ်က္မ်ား</string>
+
+
+    <string name="open_date">စတင္လက္ခံသည့္ရက္</string>
+    <string name="close_date">ေနာက္ဆံုးပိတ္ရက္</string>
+
+    //calling
+    <string name="Dear">မဂၤလာပါ　%1$s \n
+        မိတ္ေဆြ　ေလွ်ာက္ထားေသာရာထူးအတြက္လူေတြ႕ေျဖဆိုရန္　ကြ်န္ေတာ္/ကြ်န္မတို႔ရံုးခန္းအား　လာေရာက္ရန္ဖိတ္ၾကားအပ္ပါသည္။ \n
+        အေသးစိပ္သိရွိလုိပါက　ဆက္သြယ္ရန္　%2$s ႏွင့္ %3$s အားဖုန္းေခၚဆုိ၍ျဖစ္ေစ၊　လက္ခံရရွိသည့္စာလႊာ၊　စာလႊာထံသုိ႔ျဖစ္ေစ　ေမးျမန္းစံုစမ္းႏိုင္ပါသည္။ \n
+        ဂုဏ္ယူပါတယ္　\n
+        %4$s \n
+        မိတ္ေဆြအား　Jobready365 App မွလည္းဂုဏ္ယူပါသည္။ \n
+         ရွာေဖြျခင္းမွသည္...　ေအာင္ျမင္ျခင္းဆီသို႔
+
+    </string>
+    <string name="please_upgrade">Packageျမွင့္ပါ</string>
+    <string name="dialog_organization">　　　　　အဖြဲ႕အစည္း/ရာထူး</string>
+    <string name="work_scope">အလုပ္အေၾကာင္း</string>
+    <string name="upgrade_key">ျမွင့္တင္ရန္လိုအပ္ေသာနံပါတ္</string>
+
+    //feeback
+    <string name="suggest">အၾကံျပဳခ်က္မ်ား</string>
+</resources>

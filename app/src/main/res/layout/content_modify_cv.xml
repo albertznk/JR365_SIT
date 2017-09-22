@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/modify_layout"
+    android:layout_below="@+id/oki"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@drawable/scroll_bar_vertical_thumb"
+        android:scrollbarTrackVertical="@drawable/empr_scroll">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <LinearLayout
+                android:id="@+id/photo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/modify_img_photo"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/icon_and_button_01" />
+            </LinearLayout>
+            <!--Part 1 img-->
+
+            <LinearLayout
+                android:id="@+id/resume_img_part1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/photo_layout"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp" />
+
+
+                <ImageView
+                    style="@style/img_view_cv"
+                    android:src="@drawable/icon_and_button_05" />
+
+                <ImageView
+                    style="@style/img_view_cv"
+                    android:src="@drawable/icon_and_button_02" />
+
+                <ImageView
+                    style="@style/img_view_cv"
+                    android:src="@drawable/icon_and_button_04" />
+
+                <ImageView
+                    style="@style/img_view_cv"
+                    android:src="@drawable/icon_and_button_03" />
+
+                <ImageView
+                    style="@style/img_view_cv"
+                    android:src="@drawable/icon_and_button_06" />
+
+                <ImageView
+                    style="@style/img_view_cv"
+                    android:src="@drawable/religion_ic" />
+
+                <ImageView
+                    style="@style/img_view_cv"
+                    android:src="@drawable/icon_and_button_08" />
+
+                <ImageView
+                    style="@style/img_view_cv"
+                    android:src="@drawable/icon_and_button_09" />
+
+                <ImageView
+                    style="@style/img_view_cv"
+                    android:src="@drawable/icon_and_button_10" />
+            </LinearLayout>
+            <!--Part 2 img-->
+            <LinearLayout
+                android:id="@+id/resume_img_part2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/driving_rgp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/img_view_cv"
+                        android:src="@drawable/icon_and_button_11" />
+
+                    <ImageView
+                        style="@style/img_view_cv"
+                        android:src="@drawable/icon_and_button_12" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Driving License TextView-->
+            <LinearLayout
+                android:id="@+id/driving_rgp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resume_edit_part1"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/tv_driving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/resume_img"
+                    android:layout_gravity="center"
+                    android:paddingLeft="18dp"
+                    android:text="@string/resume_driving_license"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgp_check_driving_license"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/resume_edit_part1"
+                    android:layout_toRightOf="@id/tv_driving"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:paddingRight="15dp">
+
+                    <RadioButton
+                        android:id="@+id/driving_license_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/dl_yes" />
+
+                    <RadioButton
+                        android:id="@+id/driving_license_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:text="@string/dl_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--Part 1 EditText-->
+            <LinearLayout
+                android:id="@+id/resume_edit_part1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/photo_layout"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/resume_img_part1"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/project_border_textview_green_light"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/showEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/refreshButton"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/preName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/et_fullname"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_toLeftOf="@+id/refreshButton"
+                            android:layout_weight=".5"
+                            android:background="@color/transparent"
+                            android:gravity="start"
+                            android:hint="@string/resume_full_name"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/uKoLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/refreshButton"
+                        android:gravity="center_horizontal"
+                        android:onClick="MFBUTTON"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/Mrs_BTN"
+                            style="@style/KO_Daw_Layout"
+                            android:onClick="MFBUTTON"
+                            android:text="@string/Mr" />
+
+                        <Button
+                            android:id="@+id/uBTN"
+                            style="@style/KO_Daw_Layout"
+                            android:onClick="MFBUTTON"
+                            android:text="@string/U" />
+
+
+                        <Button
+                            android:id="@+id/koBTN"
+                            style="@style/KO_Daw_Layout"
+                            android:onClick="MFBUTTON"
+                            android:text="@string/Ko" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/maDawLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/refreshButton"
+                        android:gravity="center_horizontal"
+                        android:onClick="MFBUTTON"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+
+                        <Button
+                            android:id="@+id/Mriss_BTN"
+                            style="@style/KO_Daw_Layout"
+                            android:onClick="MFBUTTON"
+                            android:text="@string/Ms" />
+
+                        <Button
+                            android:id="@+id/maBTN"
+                            style="@style/KO_Daw_Layout"
+                            android:onClick="MFBUTTON"
+                            android:text="@string/Daw" />
+
+                        <Button
+                            android:id="@+id/dawBTN"
+                            style="@style/KO_Daw_Layout"
+                            android:onClick="MFBUTTON"
+                            android:text="@string/Ma" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/maleFemaleLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/refreshButton"
+                        android:gravity="center"
+                        android:onClick="MFBUTTON"
+
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/maleBTN"
+                            android:layout_width="50dp"
+                            android:layout_height="37dp"
+                            android:background="@mipmap/male_icons"
+                            android:onClick="MFBUTTON" />
+
+                        <ImageButton
+                            android:id="@+id/femaleBTN"
+                            android:layout_width="50dp"
+                            android:layout_height="37dp"
+                            android:layout_marginLeft="50dp"
+                            android:background="@mipmap/female_icons"
+                            android:backgroundTint="@null"
+                            android:onClick="MFBUTTON"
+                            android:text="Female" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/refreshButton"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:backgroundTint="@null"
+                        android:onClick="MFBUTTON"
+                        android:src="@drawable/ic_refresh_black_24dp" />
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/et_nrc_no"
+                    style="@style/et_view_cv"
+                    android:hint="@string/resume__nrc" />
+
+                <TextView
+                    android:id="@+id/editText_dob1"
+                    style="@style/et_view_cv"
+                    android:gravity="center_vertical"
+                    android:hint="@string/resume_dob"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_father_name"
+                    style="@style/et_view_cv"
+                    android:hint="@string/resume__father_name" />
+
+                <EditText
+                    android:id="@+id/et_nationality"
+                    style="@style/et_view_cv"
+                    android:hint="@string/resume_nationality" />
+
+                <!--Religion-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/project_border_textview_green_light">
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner_religion_modify"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="30dp"
+                        app:ms_alignLabels="false"
+                        app:ms_arrowColor="@color/project_green_dark"
+                        app:ms_arrowSize="9dp"
+                        app:ms_hint="@string/cv_Religion"
+
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_floatingLabelText="floating label"
+                        app:ms_hintColor="@color/colorGray"
+                        app:ms_thickness="0dp" />
+
+                </LinearLayout>
+
+                <!--Martial Status-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/project_border_textview_green_light">
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+
+                        android:id="@+id/spinner_marital_status_modify"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="30dp"
+                        app:ms_alignLabels="false"
+                        app:ms_hint="@string/cv_martial_status"
+                        app:ms_arrowColor="@color/project_green_dark"
+                        app:ms_arrowSize="9dp"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_floatingLabelText="floating label"
+                        app:ms_hintColor="@color/colorGray"
+                        app:ms_thickness="0dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_current_position"
+                    style="@style/et_view_cv"
+                    android:hint="@string/resume_current_position" />
+
+                <!--Desire Postion-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/project_border_textview_green_light">
+
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/desire_position_spinner_modify"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#000"
+                        app:ms_alignLabels="false"
+                        app:ms_arrowColor="@color/project_green_dark"
+                        app:ms_arrowSize="9dp"
+                        app:ms_baseColor="350"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_floatingLabelText="floating label"
+                        app:ms_hint="@string/resume_desired_position"
+                        app:ms_hintColor="@color/colorGray"
+                        app:ms_thickness="0dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--Part 2 EditText-->
+            <LinearLayout
+                android:id="@+id/resume_edit_part2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/driving_rgp"
+                android:layout_toRightOf="@+id/resume_img_part2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_contact_number"
+                        style="@style/et_view_cv"
+                        android:inputType="phone"
+                        android:hint="@string/resume_phone_number" />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        style="@style/et_view_cv"
+                        android:hint="@string/resume_email" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Address Image-->
+            <LinearLayout
+                android:id="@+id/img_address"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/resume_img_part2"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_and_button_27" />
+            </LinearLayout>
+            <!--Address Spinner-->
+            <LinearLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/resume_edit_part2"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/img_address"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/project_border_textview_green_light">
+
+                    <Spinner
+
+                        android:backgroundTint="@color/project_green_dark"
+                        android:id="@+id/city_spinner_modify"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp" />
+                    <!--app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/project_green_dark"
+                    app:ms_arrowSize="9dp"
+                    app:ms_hintColor="@color/colorGray"
+                    app:ms_baseColor="350"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_floatingLabelText="floating label"
+                    app:ms_hint="State/Divison"
+                    app:ms_thickness="0dp" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/project_border_textview_green_light">
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/township_spinner_modify"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="30dp"
+                        android:background="#000"
+                        app:ms_alignLabels="false"
+                        app:ms_arrowColor="@color/project_green_dark"
+                        app:ms_arrowSize="9dp"
+                        app:ms_baseColor="350"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_floatingLabelText="floating label"
+                        app:ms_hintColor="@color/colorGray"
+                        app:ms_thickness="0dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/project_border_textview_green_light"
+                    android:hint="@string/Address"
+                    android:maxLength="150"
+                    android:paddingLeft="15dp" />
+            </LinearLayout>
+            <!--Education Layout-->
+            <LinearLayout
+                android:id="@+id/education_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_school_black_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/project_border_textview_green_light"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/resume_education"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <!--Add Education Layout-->
+            <RelativeLayout
+                android:id="@+id/btn_add1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/education_layout"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/edu_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btn_add_education"
+                    style="@style/modify_btn"
+                    android:layout_width="100dp"
+                    android:layout_below="@+id/edu_list"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/Add" />
+            </RelativeLayout>
+            <!--Qther_qualification Layout-->
+            <LinearLayout
+                android:id="@+id/otherqualification_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_add1"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_and_button_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/project_border_textview_green_light"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/resume_qualification"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!--Add Button Qualification-->
+
+
+            <RelativeLayout
+                android:id="@+id/btn_add2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/otherqualification_layout">
+
+
+                <ListView
+                    android:id="@+id/qualification_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btn_add_qualification"
+                    style="@style/modify_btn"
+                    android:layout_width="100dp"
+                    android:layout_below="@+id/qualification_list"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/Add" />
+            </RelativeLayout>
+            <!--Working Experience Layout-->
+            <LinearLayout
+                android:id="@+id/work_exp_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_add2"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_and_button_19" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/project_border_textview_green_light"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/resume_work_exp"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <!--Add Button Work Experience-->
+            <RelativeLayout
+                android:id="@+id/btn_add3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/work_exp_layout">
+
+
+                <ListView
+                    android:id="@+id/work_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btn_add_work_exp"
+                    style="@style/modify_btn"
+                    android:layout_width="100dp"
+                    android:layout_below="@+id/work_list"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/Add" />
+            </RelativeLayout>
+            <!--Language Layout-->
+            <LinearLayout
+                android:id="@+id/language_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_add3"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_and_button_18" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/project_border_textview_green_light"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/resume_language"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!--Add Button Language-->
+            <RelativeLayout
+                android:id="@+id/btn_add4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/language_layout">
+
+                <ListView
+                    android:id="@+id/language_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+
+                <Button
+
+                    android:id="@+id/btn_add_language"
+                    style="@style/modify_btn"
+                    android:layout_width="100dp"
+                    android:layout_below="@+id/language_list"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/Add" />
+
+            </RelativeLayout>
+            <!--Expected Salary-->
+            <LinearLayout
+                android:id="@+id/expected_salary"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btn_add4"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/exp__sal_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_and_button_17" />
+
+                <EditText
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    android:id="@+id/et_expected_salary"
+                    style="@style/et_view_cv"
+                    android:layout_toRightOf="@+id/exp__sal_img"
+                    android:layout_weight="1"
+                    android:hint="@string/resume_expected_salary"
+                    android:inputType="number" />
+            </LinearLayout>
+            <!--Attach CV-->
+            <LinearLayout
+                android:id="@+id/attach_cv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/expected_salary"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/icon_and_button_16" />
+
+                <TextView
+                    android:id="@+id/attach_cv_textview_modify"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/project_border_textview_green_light"
+                    android:gravity="center_vertical"
+                    android:hint="@string/resume_attach_cv"
+                    android:paddingLeft="15dp"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <Button
+                    android:id="@+id/btn_cv_upload_modify"
+                    style="@style/modify_btn"
+                    android:layout_marginLeft="@dimen/empr_between_layout"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/resume_upload" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_below="@+id/attach_cv"
+                android:id="@+id/hide_cv_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_and_button_15" />
+            <!--Hide CV-->
+            <LinearLayout
+                android:layout_toRightOf="@+id/hide_cv_img"
+                android:id="@+id/hidecv_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/attach_cv"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/hide_cv_fromemp"
+                    android:gravity="center_vertical"
+                    android:text="@string/hide_cv"
+                    android:drawableRight="@drawable/ic_question_speech_bubble"
+                    android:textSize="@dimen/text_size_medium" />
+
+
+                <RadioGroup
+                    android:id="@+id/hidev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="3dp"
+                    android:layout_below="@+id/btn_cv_upload_modify"
+                    android:layout_toRightOf="@id/tv_driving"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/hide_cv_yes"
+                        android:layout_height="match_parent"
+                        android:onClick="onRadioButtonCVViewsClicked"
+                        android:text="@string/hide_cv_yes" />
+
+                    <RadioButton
+                        android:id="@+id/hide_cv_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:onClick="onRadioButtonCVViewsClicked"
+                        android:text="@string/hide_cv_no" />
+                </RadioGroup>
+            </LinearLayout>
+            <!--Submit Button-->
+            <Button
+                android:id="@+id/Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/hidecv_layout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_plain"
+                android:text="@string/resume_submit"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

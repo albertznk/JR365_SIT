@@ -1,0 +1,555 @@
+<resources>
+    <string name="user_name">UserName <font color="red">*</font></string>
+    <string name="title_activity_empr_company_pro">empr_company_pro</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_employer_comp">EmployerComp</string>
+    <string name="title_activity_emprjobpost">Emprjobpost</string>
+    <string name="app_name">JobReady365</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_jpolicy">JPolicy</string>
+    <string name="policy_security_title">Security</string>
+    <string name="policy_security_body">The information that the App collects may be stored locally on your Device and
+        may be transmitted to our servers in countries of the European Union (“EU”), the United States (“U.S.”),
+        Germany and/or other countries where GoldenICTSolutions, its affiliates or any of their service providers operate.
+        The transmission of information over wireless and wired networks is not inherently secure.
+        JobReady365 uses many tools to help protect your personal information against unauthorized access and disclosure.
+        However, we do not guarantee that your personal information or private communications will always remain private when using the App.</string>
+    <string name="policy_change_title">Changes</string>
+    <string name="policy_question_title">Product questions and contact</string>
+    <string name="policy_question_body">The Golden ICT Solutions company that licenses the App, not any Service Provider,
+        is responsible for addressing any questions, comments or claims relating to the App and/or your use of the App.
+        See below the Golden ICT Solutions companies and addresses to which you can direct your questions:
+
+Golden ICT Solutions office address below
+No 5, Third Floor, Parami Rd, Hlaing Township, Yangon, Myanmar. \n
+
+Contact numbers: \n
++95 94564 56978 \n
++95 97777 1732 \n
++95 97800 09117 \n
+Email: info@goldenictsolutions.com</string>
+    <string name="Accept">
+        <!--I have read and understand the Registered user agreement, application policy agreement and agree to be bound by all its terms-->
+        I agree
+    </string>
+
+    <string name="policy_user_control_title">User control and uninstall</string>
+    <string name="policy_grant_title">Grant of license</string>
+    <string name="policy_license_restrict_title">License restrictions</string>
+    <string name="policy_term_title">Term and termination</string>
+    <string name="policy_warranty_title">Warranty</string>
+    <string name="policy_third_title">Third party beneficiary</string>
+    <string name="policy_third_body">You acknowledge and agree that Service Providers are third party beneficiaries of these terms and
+        upon your acceptance of the terms of this Agreement, Service Providers will have the right (and are deemed to have accepted the right)
+        to enforce these terms against you as a third party beneficiary thereof.</string>
+    <string name="policy_Property_title">Intellectual property rights</string>
+    <string name="policy_Property_body">You acknowledge that, in the event of any third party claim that the App or your possession
+        and/or use of the App infringes that third party’s intellectual property rights, Golden ICT Solutions, not any Service Provider,
+        will be solely responsible for the investigation, defense, settlement and discharge of any such intellectual property infringement claim.</string>
+    <string name="policy_product_title">Product claims</string>
+    <string name="policy_product_body">
+        You acknowledge that Golden ICT Solutions, not any Service Provider, is responsible for addressing any claim you or any third party may have relating to the App or your possession and/or use of the App, including but not limited to:
+        (i) product liability claims \n
+        (ii) any claim that the App fails to conform to any applicable legal or regulatory requirement and \n
+        (iii) claims arising under consumer protection or similar legislation.
+</string>
+    <string name="policy_warranty_body">The App is provided subject to the ‘Disclaimer of Warranties and Liability’ section of the Golden ICT Solutions Website Terms and Conditions. Service Providers have no warranty obligation hereunder and give no guarantees with respect to the App or in relation to the sale, distribution or use thereof. Any claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to Golden ICT Solutions’s warranty will be Golden ICT Solutions’s sole responsibility. To the extent permitted by applicable law, Service Providers exclude any implied warranties or conditions, including, without limitation, any implied warranties or conditions of quality, performance, results, durability, title, merchantability, fitness for a particular purpose and non-infringement arising by statute or otherwise in law or from a course of dealing or usage of trade arising out of or related to this Agreement or arising out of or related to any associated programs, processes, products or services or their performance or their failure to perform. Service Providers shall not be responsible for any breach of this Agreement.
+</string>
+    <string name="policy_term_body">The license is effective for an indefinite period of time, until Golden ICT Solutins terminates it, or until you provide notice to Golden ICT Solutions your decision to terminate it. Your rights under this license will terminate automatically without notice to you if you fail to comply with any of the provisions of this Agreement. Golden ICT Solutions reserves the right to suspend, discontinue, enhance, update or otherwise modify the App, or its availability to you, at any time without notice. Upon termination of the license to the App, you will cease all use of the App.</string>
+    <string name="policy_license_restrict_body">You agree to the following license restrictions:
+(a) to use the App solely for your personal use \n
+(b) to not install or use a copy of the App on a device that you do not own or control \n
+(c) to not duplicate, copy or distribute the App, except as necessary to use it on your Device \n
+(d) to not license, sell, rent, lease, lend, transfer, assign, distribute, host, outsource, disclose or otherwise commercially exploit the App or make the App available to any third party \n
+(e) to not use the App for any fraudulent, unlawful or illegal activity or in any way that could harm the App or impair anyone else’s use of it or a wireless network or to try to gain unauthorized access to any service, data, account or network by any means \n
+(f) to not modify, translate, or create derivative works based on the App or disassemble, decompile or reverse engineer any part of the App, except and only to the extent that applicable law expressly permits, despite this limitation \n
+(g) to not work around any technical limitations in the App and \n
+(h) to preserve all copyright and other proprietary rights notices on the App and all copies thereof.</string>
+    <string name="policy_grant_body">
+JobReady365 is a mobile application which you can download free from online stores. Golden ICT Solutions grants to you a transferable without payment of any fees to Golden ICT Solutions and use the App according to the terms and conditions set forth in this Agreement. The App is licensed, not sold, to you. Except as expressly granted by this Agreement or otherwise by Golden ICT Solutions or its licensors in writing, you acquire no right, title or license in the App or any data, software, content, application or materials accessed from or incorporated in the App. This Agreement does not give you any rights to any updates or upgrades to the App or to any maintenance releases, patches, fixes, extensions or enhancements (collectively, “Updates”) to the App developed by Golden ICT Solutions or its suppliers or licensors at any time in the future. Except as required under applicable law, this license does not entitle you to receive any maintenance or support services with respect to the App. Golden ICT Solutions may provide Updates and/or support. If provided by Golden ICT Solutions, Updates may be delivered automatically or you may be notified when a new Update is ready to be installed, or we make such Updates available for download. You authorize Golden ICT Solutions to deliver automatically any Update if we believe it is necessary to provide for the continued
+functionality of the App or for any reasonable business purpose. Your use of the Updates will be governed by this Agreement unless you are asked to agree to new or additional terms at the time of download or installation. You also agree that you may have to enter into a renewed version of this Agreement if you want to download, install or use a new or modified version of the App.</string>
+    <string name="policy_user_control_body">
+You can access and change user settings for the App from the options/settings menu on your Device. Uninstallation methods vary depending on your Device. To uninstall the App, please consult yourDevice manual.</string>
+    <string name="policy_change_body">
+Golden ICT Solutions reserves the right to update, revise, supplement and otherwise modify this Agreement from time to time. Any such changes to this Agreement will be effective immediately for new users and Seven (7) days after notification (including by posting a notice on the applicable JobReady365 facebook official page) for current users. Registered users are
+encouraged to review this Agreement periodically for changes. If you do not wish to accept any change, please uninstall and discontinue using the App. Your continued use of the App following the seven (7) day notice period constitutes your acceptance of those changes.</string>
+    <string name="policy_end_user_license_title">End user license agreement for JobReady365 mobile application and JobReady365 website</string>
+    <string name="policy_end_user_license_body">
+
+This End User License Agreement (“Agreement”) sets forth the terms and conditions governing the use of JobReady365 website,
+        JobReady365 mobile application or any mobile application downloaded from Golden ICT Solutions google “playstore”
+        and Apple “app store” and any other thirdparty online store or otherwise acquired by you (the “App”) that is designed
+        to operate on any device you own or control which runs mobile operating system (“Device”).
+Note: Golden ICT Solutions is a company (owner of JobReady365 mobile App).
+
+By using this App, you agree to be bound by the terms and conditions of this Agreement.
+
+You acknowledge that this Agreement is entered into by and between you and the Golden ICT Solutions Co., Ltd.
+        affiliate identified in the App as licensor of the App, and not with any third party Device platform or associated service provider
+        or telecommunications carrier or the third party from whom you are downloading this App or any of their affiliates
+        (each,a “Service Provider”, collectively, “Service Providers”). You also acknowledge that Service Providers have no obligation hereunder
+        to furnish any maintenance and support services with respect to the App. If documentation is provided with the App,
+        you may copy and use the documentation for your internal, reference purposes.
+
+Your use of the App is subject to the JobReady365 Registered User Agreement ( http://www.goldenictsolutions.com/useragreement),
+        including the Jobready365 Mobile Applications Terms and Conditions (http://www.goldenictsolutions.com/mobiletermsconditions)
+        and the JobReady365 Website Privacy Policy (http://www.goldenictsolutions.com/privacypolicy).
+        References therein to JobReady365 websites, to ‘the Site’ or the “Service” will be deemed to include any JobReady365 content or
+        services which are included in or accessible from the App.
+
+You must also comply with the usage rules established by any Service Providers that apply to your Device ("UsageRules").
+        Such Usage Rules are incorporated herein by reference. It is your responsibility to determine what
+        Usage Rules apply to your use of the App, as they may be applicable to you depending on \n
+        (i) your Device, \n (ii) the method by which you downloaded or otherwise acquired the App and
+        \n(iii) the third party from whom you downloaded or otherwise acquired the App. Any third party Device platform or
+        the third party from whom you are downloading this App may make it a condition of their agreements with you,
+        that the App made available through such distribution service, be downloaded, installed and
+        used only on certain proprietary handheld software platforms operating on a Device.
+
+If you do not wish to accept this Agreement, do not use the App.
+
+
+
+</string>
+    <string name="title_activity_jsign_up">JSignUpActivity</string>
+    <string name="title_activity_jresume">JResumeActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_jlogin">JLoginActivity</string>
+    <string name="title_activity_jdashboard">JDashboard</string>
+    <string name="title_activity_jdashboard_applied">JDashboardApplied</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="login">Login</string>
+    <string name="SignUp">SignUp</string>
+    <string name="Employer">Employer</string>
+    <string name="Employee">Jobseeker</string>
+
+
+    <string name="employer">Employer</string>
+    <string name="employee">Employee</string>
+    <string name="error_length_password">The password must be at least 6 characters</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_jdashboard_navi">JDashboardNavi</string>
+    <string name="title_home">Home</string>
+    <string name="register_as_employee">Register as Employee</string>
+    <string name="register_as_employer">Register as Employer</string>
+    <string name="search_jobs">Search Jobs</string>
+    <string name="title_browse_jobs">Browse Jobs</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_search">Search</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_appointment">Appointment</string>
+    <string name="title_view_cv">View CV</string>
+    <string name="appointment">Appointment</string>
+    <string name="logout">Logout</string>
+    <string name="btn_agree">Agree</string>
+    <string name="applied_jobs">Applied Jobs</string>
+
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_jlanguage">JLanguageActivity</string>
+    <string name="title_activity_jjob_openning">JJobOpenning</string>
+    <string name="title_activity_jcompany_profile">JCompanyProfile</string>
+    <string name="title_activity_jview_cv">JViewCVActivity</string>
+    <string name="title_activity_fasdfasdfs">fasdfasdfs</string>
+    <string name="title_activity_sdfgsdfgs">sdfgsdfgs</string>
+    <string name="title_activity_jdashboard1">JDashboard1</string>
+    <string name="title_activity_jdashboard_ok">JDashboardOk</string>
+    <string name="title_activity_jappointment">JAppointment</string>
+
+    <string name="policy_and_agreement">Policy &amp; Agreement</string>
+
+
+    <string name="Current_working">Currently Working</string>
+    <string name="Company_Profile">Business Profile</string>
+    <string-array name="spin_religion">
+        <!--<item>Religion</item>-->
+        <item>Buddhist</item>
+        <item>Christian</item>
+        <item>Islamic</item>
+        <item>Hindu</item>
+        <item>Freethinker</item>
+
+               
+    </string-array>
+
+    <string-array name="spin_marital_status">
+        <!--<item>Martial Status</item>-->
+        <item>Single</item>
+        <item>Married</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="spin_state_division">
+        <item>State/Division</item>
+        <item></item>
+             
+        <item>Ayeyarwaddy</item>
+               
+        <item>Yangon</item>
+        <item>Ayeyarwaddy</item>
+        <item>Bago</item>
+    </string-array>
+
+    <string-array name="spin_township">
+        <item>Township <font color="red">*</font></item>
+
+               
+        <item>Township1</item>
+        <item>Township3</item>
+        <item>Township2</item>
+    </string-array>
+
+    <string name="btnTakePicture">Capture Image</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="or">(or)</string>
+    <string name="btnUploadToServer">Upload to Server</string>
+    <string name="title_activity_login_test">Sign in</string>
+    <string name="Registration">Registration</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="call">Call</string>
+    <string name="sms">SMS</string>
+
+    <string name="Phone_Number">Mobile Number</string>
+    <string name="Password">Password</string>
+    <string name="Verify_Password">Verify Password</string>
+    <string name="Login_Mobile">Mobile Number</string>
+    <string name="Login_Password">Password</string>
+    <string name="Forget">Forget Password</string>
+    <string name="Sing_up">Sign Up</string>
+    <string name="Login">Login</string>
+    <string name="title_activity_modify_cv">ModifyCvActivity</string>
+
+    <string name="Cancel">Cancel</string>
+    <string name="Cancel1">Cancel</string>
+    //Dashboard
+
+
+    <string name="dash_search">Search</string>
+    <string name="CV">CV</string>
+    <string name="dash_dashboard">Dashboard</string>
+
+
+    <string name="toolbar_More">Menu</string>
+    <string name="toolbar_search">Search</string>
+    <string name="toolbar_cv">Curriculumn Vitae</string>
+    <string name="toolbar_dashboard">Jobseeker Dashboard</string>
+
+    //For CV English
+
+    <string name="cv_father_name">Father Name</string>
+    <string name="cv_gender">Gender <font color="red">*</font></string>
+    <string name="gender">Gender</string>
+    <string name="cv_nrc_no">N.R.C Number</string>
+    <string name="cv_Place_of_Birth">Place of Birth</string>
+    <string name="cv_date_of_Birth">Date of Birth</string>
+    <string name="cv_address">Address</string>
+    <string name="cv_township">Township</string>
+    <string name="cv_Postal_Code">Postal Code</string>
+    <string name="cv_Nationality">Nationality</string>
+    <string name="cv_Religion">Religion</string>
+    <string name="cv_martial_status">Martial Status</string>
+    <string name="cv_current_Position">Current Position</string>
+    <string name="cv_desire_Position">Desire Position</string>
+    <string name="cv_driving_license">Driving License</string>
+    <string name="cv_city">State/Division</string>
+    <string name="cv_expected_salary">Expected Salary</string>
+    <string name="cv_country">Country</string>
+    <string name="cv_create_at">Create At</string>
+    <string name="cv_update_at">Update At</string>
+
+
+    <string name="cv_education">Education</string>
+    <string name="cv_qualification">Other Qualification/Certificate</string>
+
+    <string name="cv_Work_Experience">Work Experience</string>
+    <string name="cv_Language">Language</string>
+
+    <string name="cv_view_yes">Yes</string>
+    <string name="cv_view_no">No</string>
+
+    <string name="cv_download">To Download CV</string>
+
+    //for more
+    <string name="more_appointment">Appointment</string>
+    <string name="more_log_out">Logout</string>
+    <string name="more_applyjob">Applied Job</string>
+    <string name="more_change_language">Change Language</string>
+
+    <string name="more_registered_mobile_no">Registered Mobile No</string>
+    <string name="more_Policy">Policy and Agreement</string>
+    <string name="more_Feedback">Feedback</string>
+    <string name="upgrade_history">Upgrade History</string>
+    <string name="topup_histroy">Topup History</string>
+
+    <string name="more_myanmar">ျမန္မာ</string>
+    <string name="more_english">English</string>
+
+
+    //new
+    <string name="update_job_title">Confirm to update?</string>
+    <string name="update_job_message">"Click Ok to change your modification?"</string>
+    <string name="delete_job">Are you sure to delete this job?</string>
+    <string name="attach_company_logo">Attach Business Logo</string>
+    <string name="Requirement">Requirement<font color="red">*</font></string>
+
+
+    <string name="relevant_job">Relevant Job</string>
+
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="unisex">Male/Female</string>
+    <string name="delete">Delete</string>
+    <string name="deleting">Deleting...</string>
+    <string name="delete_company">Are you sure to delete this business?</string>
+    <string name="send">Send</string>
+    <string name="not_send">Not Send</string>
+    <string name="send_cv">Confirm to send your CV to Employer</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="take_your_photo">Take Your Photo</string>
+    <string name="take_your_photo1">Take Your Photo</string>
+
+    <string name="job_category">Job Category</string>
+    <string name="job_title">Job Title<font color="red">*</font></string>
+
+    //for show job detail
+    <string name="job_detail_job_type">Job Type</string>
+    <string name="job_detail_gender">Unisex</string>
+    <string name="job_detail_male_post">Male Post</string>
+    <string name="job_detail_female_post">Female Post</string>
+    <string name="job_detail_salary">Salary Range</string>
+    <string name="job_detail_language">Language Skill</string>
+    <string name="job_detail_job_location">Job Location</string>
+    <string name="job_detail_graduate">Graduate</string>
+    <string name="job_detail_martial_status">Single</string>
+    <string name="job_detail_age_limit">Age </string>
+    <string name="job_detail_accomodation">Accommodation</string>
+    <string name="job_detail_Food">Food Supply</string>
+    <string name="job_detail_ferry">Ferry</string>
+    <string name="job_detail_traiing">Training</string>
+    <string name="job_detail_description">Description<font color="red">*</font></string>
+    <string name="job_detail_work_exp">Work Experience/Requirements</string>
+    <string name="job_detailsummary">Qualification</string>
+    <string name="job_detail_apply">Apply</string>
+    <string name="description">Description</string>
+    <string name="no_start_description">Description</string>
+
+    //search_job
+    <string name="search_search">Search</string>
+    <string name="search_hint">Type Job Title</string>
+
+
+    //for applied job
+    <string name="applied_job_job_title">   Job Title:           </string>
+    <string name="applied_job_Company_Name">            Business Name:        </string>
+    <string name="applied_job_Applied_Date">             Applied Date:         </string>
+    <string name="applied_job_Close_Date">              Close Date:          </string>
+
+
+    //for language_row
+    <string name="language_row_language">Language</string>
+    <string name="language_row_reading_lvl">Speaking Level</string>
+    <string name="language_row_writing_lvl">Writing Level</string>
+
+
+    <string name="appointment_text">There is no appointment yet</string>
+    <string name="applied_text">You have not  applied any job yet</string>
+    //for resume
+    <string name="Ma">Ma</string>
+    <string name="Ms">Ms</string>
+    <string name="U">U</string>
+    <string name="Mr">Mr</string>
+    <string name="Daw">Daw</string>
+    <string name="Ko">Ko</string>
+    <string name="required_field">Required Field are missing...</string>
+    <string name="hide_cv">Make my CV private</string>
+    <string name="hide_cv_extension">Make my CV private
+(Your CV will not be searchable if you set it  Yes  but you can still apply the job)
+</string>
+    <string name="resume_religion"> Religion</string>
+    <string name="resume_martital_Status">Martial Status *</string>
+    <string name="resume_desired_position">Desire Position *</string>
+    <string name="resume_take_your_photo">          Take Your Photo <font color="red">*</font>   </string>
+    <string name="resume_full_name">                Full Name        <font color="red">*</font>  </string>
+    <string name="resume__nrc">                     N.R.C No           <font color="red">*</font> </string>
+    <string name="resume_dob">                      Date of Birth    <font color="red">*</font>   </string>
+    <string name="resume__father_name">             Father Name      <font color="red">*</font>   </string>
+    <string name="resume_nationality">              Nationality      <font color="red">*</font>   </string>
+    <string name="resume_current_position">         Current Position    </string>
+    <string name="resume_driving_license">          Driving License     </string>
+    <string name="resume_phone_number">             Contact Number     <font color="red">*</font></string>
+    <string name="resume_email">                    Email              </string>
+    <string name="resume_unit_no_street">           Unit No,Street      </string>
+    <string name="resume_education">                Education          <font color="red">*</font></string>
+    <string name="resume_no_formal_edu">            No Formal Education</string>
+    <string name="resume_qualification">            Other Qualification </string>
+    <string name="resume_work_exp">                 Working Experience  </string>
+    <string name="resume_language">                 Language            </string>
+    <string name="resume_expected_salary">          Expected Salary  <font color="red">*</font>  </string>
+    <string name="resume_attach_cv">                Attach CV(pdf,docx)           </string>
+    <string name="resume_add">                      Add                 </string>
+    <string name="resume_upload">                   Upload              </string>
+    <string name="resume_submit">                   Submit              </string>
+    <string name="dl_yes">Yes</string>
+    <string name="dl_no">No</string>
+    <string name="hide_cv_yes">Yes</string>
+    <string name="hide_cv_no">No</string>
+
+
+    //for common employee
+    <string name="remaintime">Remaining</string>
+    <string name="exit">Exit!!</string>
+    <string name="logout_exit">Are you sure to logout?</string>
+    <string name="no_job_found">Your Desire Job Not Found</string>
+    <string name="Address">Address <font color="red">*</font></string>
+    <string name="spoken_lvl">Speaking Level(Good,Excellent,Fair)</string>
+    <string name="write_lvl">Writing Level(Good,Excellent,Fair)</string>
+    <string name="Language">Language</string>
+    <string name="image_to_upload">Image To Upload</string>
+    <string name="university">University</string>
+    <string name="Degree">Degree</string>
+    <string name="education">Education/Degree</string>
+    <string name="loading">Please Wait</string>
+    <string name="Uploading">Uploading</string>
+    <string name="Searching">Searching</string>
+    <string name="job_success">You applied job!</string>
+    <string name="Log_in">Logging In</string>
+    <string name="Check_connection">Check Your Connection</string>
+    <string name="edu_start_Date">Start Date </string>
+    <string name="edu_end_Date">End Date </string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="center_name">Center Name</string>
+    <string name="course">Course</string>
+
+    //for common employer
+    <string name="View">            View            </string>
+    <string name="Delete">          Delete          </string>
+    <string name="Add">             Add             </string>
+    <string name="Upgrade">         Upgrade         </string>
+    <string name="Save">            Save            </string>
+    <string name="empr_dashboard">  Dashboard       </string>
+    <string name="Post_Job">        Post Job        </string>
+    <string name="Shortlisted">     Shortlisted     </string>
+    <string name="Search">          Search          </string>
+    <string name="More">            More            </string>
+    <string name="Business_Name">   Business Name <font color="red">*</font>  </string>
+    <string name="Edit">            Edit            </string>
+    <string name="Candidate">       Candidate       </string>
+    <string name="Back">            Back            </string>
+    <string name="Upload">          Upload          </string>
+    <string name="upgrade_package_upgrade">Upgrade</string>
+    <string name="upgrade_package_cancel">Cancel</string>
+    <string name="no_start_Business_Name">   Business Name  </string>
+    //for Employer Dashboard
+
+
+    <string name="empr_Job_Opening">    Job Openings         </string>
+    <string name="Candidate_Count">     Candidate Count     </string>
+
+    //for Employer Search
+    <string name="search_empr">Search</string>
+
+
+    //for Employer Postjob
+    <string name="post_Position">       Position            </string>
+    <string name="post_Qualification">  Qualification       </string>
+    <string name="post_Quantity">       Quantity            </string>
+    <string name="post_work_exp">       Working Experience  </string>
+    <string name="post_language_skill"> Language Skill      </string>
+    <string name="post_address">        Address             </string>
+    <string name="post_graduated">      Graduated?          </string>
+    <string name="post_martial_status"> Single?             </string>
+    <string name="post_accommodation">  Accommodation       </string>
+    <string name="post_food">           Food                </string>
+    <string name="post_transprtation">  Transportation      </string>
+    <string name="post_training">       Training            </string>
+    <string name="post_mini">           Minimum Age         </string>
+    <string name="post_max">            Maximum Age         </string>
+    <string name="post_description">    Job Description     </string>
+    <string name="post_to">             To                  </string>
+
+
+    //for post company
+    <string name="post_c_name">         Business Name     </string>
+    <string name="post_c_Telephone">    Telephone        <font color="red">*</font></string>
+    <string name="post_c_TTelephone">    Telephone        </string>
+    <string name="post_c_email">        Email            </string>
+    <string name="post_c_address">      Address         <font color="red">*</font> </string>
+    <string name="post_c_pri_person">   Primary Person   <font color="red">*</font></string>
+    <string name="post_c_sec_person">   Secondary Person </string>
+    <string name="post_c_about">        About Business    </string>
+    <string name="post_c_logo">         Business Logo     </string>
+    <string name="post_c_new_post">     Post Job Now     </string>
+    <string name="no_start_c_pri_person">   Primary Person   </string>
+    <string name="no_c_Telephone">    Telephone        </string>
+
+    //post job
+    <string name="title">Title</string>
+    <string name="qualification_post_job_hint">Example-B.Sc(Science)</string>
+    <string name="requirement_post_job_hint">e.g Fresh graduate are welcome. </string>
+    <string name="description_post_job_hint">Example-Monday To Friday : 9:00 A.M to 5 P.M </string>
+    <string name="Max_age">Max Age<font color="red">*</font></string>
+    <string name="Min_age">Min Age<font color="red">*</font></string>
+    <string name="search_job_employee">There is no job right now</string>
+    <string name="Refresh">Refresh</string>
+
+
+    //start 14.7.2017
+
+
+    //for employer DashBoard
+    <string name="Employer_Dash">Employer Dashboard</string>
+    <string name="Employer_Job_post">Post Job</string>
+    <string name="Employer_Search">Search</string>
+    <string name="Employer_More">Menu</string>
+    <string name="Employer_shortlist">Shortlisted</string>
+
+    <string name="employer_search">Search CV</string>
+    //for employee
+    <string name="Apply">Apply</string>
+    <string name="Job_Industry">Job Industry</string>
+    <string name="Job_Count">Job Count</string>
+    <string name="Quilification">Qualification<font color="red">*</font></string>
+    <string name="Modify">Modify</string>
+    <string name="company_about">About</string>
+    <string name="Business_Type">Business Type</string>
+    <string name="CompanyName">Business Name</string>
+    <string name="employee_job_type">Job Type</string>
+    <string name="salary_range">Salary Range (MMK)</string>
+    <string name="age_limit">Age Limit</string>
+    <string name="Work_Experience_Requirement">Work Experience/Requirement</string>
+
+
+    <string name="open_date">Open Date</string>
+    <string name="close_date">Close Date</string>
+
+    //calling
+    <string name="Dear">Dear %1$s, \n We would like to invite you to our office to interview for the position you applied. \n
+                Please contact us at %2$s,%3$s or reply to this message if you have any question. \n
+        Happy Hiring! \n
+        %4$s \n
+        Powered by Jobready365 App \n
+        ရွာေဖြျခင္းမွသည္...　ေအာင္ျမင္ျခင္းဆီသို႔
+    </string>
+    <string name="please_upgrade">Please Upgrade package</string>
+    <string name="dialog_organization">Organization/Position</string>
+    <string name="work_scope">Work Scope</string>
+    <string name="upgrade_key">Upgrade Key</string>
+
+    //feedback
+    <string name="suggest">Suggestion</string>
+</resources>

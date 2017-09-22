@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/employer_tool_bar" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cvBox"
+        android:layout_below="@+id/toolbar_custom" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvBox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="5dp"
+        app:cardBackgroundColor="#c5c6c5"
+        app:cardCornerRadius="3dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabHostLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="1.5dp"
+            android:background="@drawable/tab_background"
+            app:tabGravity="fill"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed" />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

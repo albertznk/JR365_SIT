@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/employer_post_job"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/postProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ScrollView
+        android:id="@+id/scroll_layout_post"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/postjobLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtv1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/Business_Name"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/businessType_linear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_below="@id/txtv1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/project_border_textview_green_light">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/bnpSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txtv1"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="Hello"
+                    android:paddingRight="5dp"
+                    app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/project_green_dark"
+                    app:ms_arrowSize="9dp"
+                    app:ms_baseColor="350"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_floatingLabelText="floating label"
+                    app:ms_hintColor="@color/colorGray"
+                    app:ms_thickness="0dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtv2"
+                style="@style/employer_postjob_textStyle"
+                android:layout_below="@id/businessType_linear"
+                android:text="@string/job_detail_job_type" />
+
+            <LinearLayout
+                android:id="@+id/jobTypePost_linear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/txtv2"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/project_border_textview_green_light">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/jobTypePost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="5dp"
+                    app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/project_green_dark"
+                    app:ms_arrowSize="9dp"
+                    app:ms_baseColor="350"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_floatingLabelText="floating label"
+                    app:ms_hintColor="@color/colorGray"
+                    app:ms_thickness="0.5dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtv3"
+                style="@style/employer_postjob_textStyle"
+                android:layout_below="@+id/jobTypePost_linear"
+                android:text="@string/job_category" />
+
+            <LinearLayout
+                android:id="@+id/jobCategory_Linear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/txtv3"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/project_border_textview_green_light">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/jobCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txtv3"
+                    android:layout_marginRight="10dp"
+                    app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/project_green_dark"
+                    app:ms_arrowSize="9dp"
+                    app:ms_baseColor="350"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_floatingLabelText="floating label"
+                    app:ms_hintColor="@color/colorGray"
+                    app:ms_thickness="0dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/employer_postjob_textStyle"
+                android:layout_below="@id/jobCategory_Linear"
+                android:text="@string/job_title" />
+
+            <EditText
+                android:id="@+id/titleEDT"
+                style="@style/employer_postjob_boxStyle"
+                android:layout_below="@+id/title"
+                android:layout_margin="10dp"
+                android:background="@drawable/project_border_textview_green_light"
+                android:hint="@string/title"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/qualiText"
+                style="@style/employer_postjob_textStyle"
+                android:layout_below="@+id/titleEDT"
+                android:text="@string/Quilification" />
+
+            <EditText
+                android:id="@+id/qualificationEDT"
+                style="@style/employer_postjob_boxStyle"
+                android:layout_height="120dp"
+                android:layout_below="@+id/qualiText"
+                android:layout_margin="10dp"
+                android:gravity="top"
+                android:hint="@string/qualification_post_job_hint"
+                android:maxLines="6"
+                android:paddingLeft="5dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/salaryText"
+                style="@style/employer_postjob_textStyle"
+                android:layout_below="@id/qualificationEDT"
+                android:text="@string/salary_range" />
+
+            <LinearLayout
+                android:id="@+id/salaryLinear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_below="@id/salaryText"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/project_border_textview_green_light">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/salarySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txtv3"
+                    android:layout_marginRight="10dp"
+                    app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/project_green_dark"
+                    app:ms_arrowSize="10dp"
+                    app:ms_baseColor="350"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_floatingLabelText="floating label"
+                    app:ms_hintColor="@color/colorGray"
+                    app:ms_thickness="0dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/FemaleTxt"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/salaryLinear"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text="@string/female"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/MaleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/salaryLinear"
+                android:layout_margin="15dp"
+                android:layout_toLeftOf="@id/FemaleTxt"
+                android:gravity="center"
+                android:text="@string/male"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+
+            <ImageButton
+                android:id="@+id/postitonRefresh"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/maleCountEDT"
+                android:layout_alignLeft="@+id/gg"
+                android:layout_below="@+id/gg"
+                android:background="@null"
+                android:src="@drawable/ic_refresh_black_24dp" />
+
+            <TextView
+                android:id="@+id/uniText"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/salaryLinear"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@+id/femaleCountEDT"
+                android:gravity="center"
+                android:text="@string/unisex"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/gg"
+                style="@style/employer_postjob_textStyle"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/MaleTxt"
+                android:text="@string/cv_gender" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/maleCountEDT"
+                android:layout_alignTop="@id/MaleTxt"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/gg"
+                android:background="@color/stringColor" />
+
+            <EditText
+                android:id="@+id/femaleCountEDT"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@id/FemaleTxt"
+                android:layout_below="@id/FemaleTxt"
+                android:background="@drawable/project_border_textview_green_light"
+                android:gravity="center"
+                android:hint="00"
+                android:inputType="numberDecimal"
+                android:maxLength="2" />
+
+            <EditText
+                android:id="@+id/maleCountEDT"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/MaleTxt"
+                android:layout_below="@+id/MaleTxt"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/project_border_textview_green_light"
+                android:gravity="center"
+                android:hint="00"
+                android:inputType="numberDecimal"
+                android:maxLength="2" />
+
+            <EditText
+                android:id="@+id/maleFemaleCountEDT"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/femaleCountEDT"
+                android:layout_marginLeft="10dp"
+                android:layout_alignRight="@+id/uniText"
+                android:layout_below="@id/FemaleTxt"
+                android:background="@drawable/project_border_textview_green_light"
+                android:gravity="center"
+                android:hint="00"
+                android:inputType="numberDecimal"
+                android:maxLength="3" />
+
+            <TextView
+                android:id="@+id/requirementText"
+                style="@style/employer_postjob_textStyle"
+                android:layout_below="@+id/maleCountEDT"
+                android:layout_marginTop="20dp"
+                android:text="@string/Requirement" />
+
+            <EditText
+                android:id="@+id/requiremnetEDT"
+                style="@style/employer_postjob_boxStyle"
+                android:layout_height="120dp"
+                android:layout_below="@+id/requirementText"
+                android:layout_margin="10dp"
+                android:gravity="top"
+                android:hint="@string/requirement_post_job_hint"
+                android:maxLines="6"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/requiremnetBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/requiremnetEDT"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/employer_postjob_requriementStyle"
+                        android:text="@string/cv_martial_status" />
+
+                    <TextView
+                        style="@style/employer_postjob_requriementStyle"
+                        android:text="@string/age_limit" />
+
+                    <TextView
+                        style="@style/employer_postjob_requriementStyle"
+                        android:text="@string/post_accommodation" />
+
+                    <TextView
+                        style="@style/employer_postjob_requriementStyle"
+                        android:text="@string/post_food" />
+
+                    <TextView
+                        style="@style/employer_postjob_requriementStyle"
+                        android:text="@string/job_detail_ferry" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/maritalStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Single" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/minAge"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/project_border_textview_green_light"
+                            android:gravity="center"
+                            android:hint="@string/Min_age"
+                            android:inputType="numberDecimal"
+                            android:maxLength="2"
+                            android:padding="5dp"
+                            android:singleLine="true" />
+
+                        <EditText
+                            android:id="@+id/maxAge"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/project_border_textview_green_light"
+                            android:gravity="center"
+                            android:hint="@string/Max_age"
+                            android:inputType="numberDecimal"
+                            android:maxLength="2"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/accomodation"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Yes" />
+
+                    <CheckBox
+                        android:id="@+id/foodYes"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Yes" />
+
+                    <CheckBox
+                        android:id="@+id/ferryYes"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Yes" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/start_date_end_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/requiremnetBox"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/project_border_textview_green_light"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:hint="@string/edu_start_Date" />
+
+                <TextView
+                    android:id="@+id/end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/project_border_textview_green_light"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:hint="@string/edu_end_Date" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/workexpTxt"
+                style="@style/employer_postjob_textStyle"
+                android:layout_below="@+id/start_date_end_date_layout"
+                android:layout_marginTop="15dp"
+                android:text="@string/job_detail_description" />
+
+            <EditText
+                android:id="@+id/workperienceEDT"
+                style="@style/employer_postjob_boxStyle"
+                android:layout_height="120dp"
+                android:layout_below="@+id/workexpTxt"
+                android:layout_margin="10dp"
+                android:gravity="top"
+                android:hint="@string/description_post_job_hint"
+                android:maxLines="6"
+                android:textSize="14sp" />
+
+            <Button
+                android:foregroundGravity="center"
+                android:id="@+id/confirmAndSave"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/workperienceEDT"
+                android:layout_margin="25dp"
+                android:background="@drawable/btn_green_light2"
+                android:gravity="center"
+                android:text="@string/Save"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                 />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editText_university"
+        style="@style/dialog_text_view"
+        android:hint="@string/university"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edittext_degree"
+        style="@style/dialog_text_view"
+        android:hint="@string/Degree"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView_edu_start_year"
+        style="@style/dialog_text_view"
+        android:hint="@string/edu_start_Date"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_edu_end_year"
+        style="@style/dialog_text_view"
+        android:hint="@string/edu_end_Date"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.63"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_post_edu"
+            style="@style/dialog_btn"
+            android:layout_marginRight="5dp"
+            android:text="@string/Upload" />
+
+        <Button
+            android:id="@+id/btnDismiss"
+            style="@style/dialog_btn"
+            android:layout_marginLeft="5dp"
+            android:text="@string/Cancel1" />
+    </LinearLayout>
+    <!-- Record video button -->
+
+</LinearLayout>

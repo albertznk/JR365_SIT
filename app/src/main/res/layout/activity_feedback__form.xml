@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feedback__form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.goldenictsolutions.win.goldenictjob365.commonfile.Feedback_Form">
+    <LinearLayout
+        android:id="@+id/scrolll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_background"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewPolicy"
+                android:layout_width="0dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1.20"
+                android:src="@mipmap/true_logo" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="5"
+                android:gravity="end"
+                android:focusable="false"
+                android:text="@string/more_Feedback"
+                android:textAlignment="gravity"
+                android:textColor="#50B748"
+                android:paddingRight="@dimen/empr_between_layout"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:text="FeedBack Form"
+                    android:textColor="@color/colorblack"
+                    android:layout_marginBottom="@dimen/empr_between_layout"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:id="@+id/empr_feed_name"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/user_name"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/border"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:id="@+id/empr_feed_phone"
+                    android:hint="@string/Phone_Number"
+                    android:inputType="phone"
+
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:maxLines="3"
+                    android:id="@+id/empr_feed_description"
+                    android:layout_marginTop="20dp"
+                    android:inputType="text"
+                    android:hint="@string/suggest"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/border"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/se_btn_back"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="@dimen/empr_between_layout"
+                    android:text="Submit"
+                    android:elevation="@dimen/empr_between_layout"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </ScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Back"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorDarkGray"
+            android:drawablePadding="2dp"
+            android:paddingTop="@dimen/empr_between_layout"
+            android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+            android:id="@+id/empr_feed_back"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
+</RelativeLayout>

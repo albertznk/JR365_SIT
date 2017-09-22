@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/apply_toolbar_custom"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/toolbar_background">
+
+    <ImageView
+        android:id="@+id/imageViewPolicy"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="start"
+        android:src="@mipmap/true_logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="15dp"
+        android:gravity="end|center_vertical"
+        android:text="@string/more_applyjob"
+        android:textAlignment="gravity"
+        android:textColor="#50B748"
+        android:textSize="@dimen/text_size_large" />
+</android.support.v7.widget.Toolbar>

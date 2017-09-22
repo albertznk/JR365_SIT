@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:id="@+id/layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="#000"
+                    android:textAllCaps="false"
+                    android:text="@string/language_row_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:textColor="#000"
+                    android:textAllCaps="false"
+                    android:text="@string/language_row_reading_lvl"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:textColor="#000"
+                    android:textAllCaps="false"
+                    android:text="@string/language_row_writing_lvl"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="Language"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_spoken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="Spoken Level"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_written"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="Written Level"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight=".3">
+
+            <ImageView
+                android:id="@+id/language_edit"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_create_black_24dp" />
+
+            <ImageView
+                android:id="@+id/language_delete"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@mipmap/fuck_off" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

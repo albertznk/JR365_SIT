@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="0.39"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <!-- Capture picture button -->
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icon_and_button_18" />
+
+            <EditText
+                android:maxLength="50"
+                android:id="@+id/edittext_language_"
+                style="@style/dialog_text_view"
+                android:hint="@string/Language"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:maxLength="50"
+                android:id="@+id/edittext_language_level"
+                style="@style/dialog_text_view"
+                android:hint="@string/spoken_lvl"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:maxLength="50"
+                android:id="@+id/edittext_language_wlevel"
+                style="@style/dialog_text_view"
+                android:hint="@string/write_lvl"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp">
+
+                <Button
+                    android:id="@+id/btn_post_language"
+                    style="@style/dialog_btn"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/Upload" />
+
+                <!-- Record video button -->
+
+                <Button
+                    android:id="@+id/btn_dismiss_language"
+                    style="@style/dialog_btn"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/Cancel1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

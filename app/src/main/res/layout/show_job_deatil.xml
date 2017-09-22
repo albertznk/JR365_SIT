@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBarJobDeatil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ScrollView
+        android:layout_above="@+id/view_v3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/showLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/empOpenJobLogo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="25dp"
+                android:src="@drawable/job_logo" />
+
+            <TextView
+                android:id="@+id/empJobCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_alignTop="@+id/empOpenJobLogo"
+                android:layout_toRightOf="@+id/empOpenJobLogo"
+                android:gravity="center_vertical"
+                android:text="Job Category" />
+
+            <TextView
+                android:id="@+id/empCompanyName"
+                android:layout_below="@+id/empJobCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/aboutButton"
+                android:layout_alignLeft="@+id/empJobCategory"
+                android:gravity="center_vertical"
+                android:text="Company Name Co.,ltd"
+                android:textColor="#50B748"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/aboutButton"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:textSize="@dimen/text_size_small"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/empCompanyName"
+                android:background="@drawable/btn_green_light"
+                android:text="@string/company_about"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/jobType"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/empOpenJobLogo"
+                android:text="@string/employee_job_type" />
+
+            <TextView
+                android:id="@+id/setJobType"
+                style="@style/Job_Detail_WorkCode"
+                android:layout_alignTop="@+id/jobType"
+                android:text="set job tyle" />
+
+            <TextView
+                android:id="@+id/gender"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/jobType"
+                android:text="@string/job_detail_gender" />
+
+            <TextView
+                android:id="@+id/malePost"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/gender"
+                android:text="@string/job_detail_male_post" />
+
+            <TextView
+                android:id="@+id/femalePost"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/malePost"
+                android:text="@string/job_detail_female_post" />
+
+            <TextView
+                android:id="@+id/setGenderPosition"
+                style="@style/Job_Detail_WorkCode"
+                android:layout_below="@+id/setJobType"
+                android:text="Male 2 posts | female 1 post" />
+
+            <TextView
+                android:id="@+id/SalaryRange"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/femalePost"
+                android:text="@string/job_detail_salary" />
+
+            <TextView
+                android:id="@+id/setSalaryRange"
+                style="@style/Job_Detail_WorkCode"
+                android:layout_below="@+id/setFemalePost"
+                android:text="set salary range" />
+
+            <TextView
+                android:id="@+id/setMalePost"
+                style="@style/Job_Detail_WorkCode"
+                android:layout_below="@+id/setGenderPosition"
+                android:text="set Male posts" />
+
+            <TextView
+                android:id="@+id/setFemalePost"
+                style="@style/Job_Detail_WorkCode"
+                android:layout_below="@+id/setMalePost"
+                android:text="set Female Post" />
+
+            <TextView
+                android:id="@+id/show_languageSkill"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/SalaryRange"
+                android:text="@string/job_detail_language" />
+
+            <TextView
+                android:id="@+id/setLanguageSkill"
+                style="@style/Job_Detail_WorkCode"
+                android:layout_below="@+id/setSalaryRange"
+                android:text="set Language Skill" />
+
+            <TextView
+                android:id="@+id/setJobLocation"
+                style="@style/Job_Detail_WorkCode"
+                android:layout_below="@+id/setLanguageSkill"
+                android:text="set Job Location"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/setGraduate"
+                style="@style/Job_Detail_WorkCode"
+                android:layout_below="@+id/setJobLocation"
+                android:text="set Degree "
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/show_job_location"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/setLanguageSkill"
+                android:text="@string/job_detail_job_location" />
+
+            <TextView
+                android:id="@+id/show_graduate"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/setJobLocation"
+                android:text="@string/job_detail_graduate"
+                android:visibility="invisible"/>
+
+            <View
+                android:id="@+id/v1"
+                style="@style/view_bar"
+                android:layout_below="@+id/show_graduate"
+                android:layout_margin="15dp" />
+
+            <TextView
+                android:id="@+id/maritalStatus"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/v1"
+                android:text="@string/job_detail_martial_status" />
+
+            <TextView
+                android:id="@+id/setMaritalStatus"
+                style="@style/Job_Detail_WorkCode"
+                android:layout_below="@+id/v1"
+                android:text="Married or Single" />
+
+            <TextView
+                android:id="@+id/AgeLimit"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/maritalStatus"
+                android:text="@string/job_detail_age_limit" />
+
+            <TextView
+                android:id="@+id/setAgeRange"
+                style="@style/Job_Detail_WorkCode"
+                android:layout_below="@+id/setMaritalStatus"
+                android:text="22 - 28" />
+
+            <TextView
+                android:id="@+id/accomodation"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/AgeLimit"
+                android:text="@string/job_detail_accomodation" />
+
+            <TextView
+                android:id="@+id/setAccomodation"
+                style="@style/Job_Detail_WorkCode"
+                android:layout_below="@+id/setAgeRange"
+                android:text="yes or no" />
+
+            <TextView
+                android:id="@+id/Food"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/accomodation"
+                android:text="@string/job_detail_Food" />
+
+            <TextView
+                android:id="@+id/setFoodSupport"
+                style="@style/Job_Detail_WorkCode"
+                android:layout_below="@+id/setAccomodation"
+                android:text="Foot support or Not" />
+
+            <TextView
+                android:id="@+id/transportation"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/Food"
+                android:text="@string/post_transprtation" />
+
+            <TextView
+                android:id="@+id/setFerry"
+                style="@style/Job_Detail_WorkCode"
+                android:layout_below="@+id/setFoodSupport"
+                android:text="Ferry Support or not" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/setTraining"-->
+                <!--style="@style/Job_Detail_WorkCode"-->
+                <!--android:layout_below="@+id/setFerry"-->
+                <!--android:text="yes or not" />-->
+
+            <TextView
+                android:id="@+id/open_dateShow"
+                style="@style/job_detail_show"
+                android:layout_below="@+id/transportation"
+                android:text="@string/job_detail_traiing"
+                android:visibility="invisible"/>
+
+            <View
+                android:id="@+id/v2"
+                style="@style/view_bar"
+                android:layout_below="@+id/open_dateShow"
+                android:layout_margin="15dp" />
+
+            <TextView
+                android:id="@+id/qu"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/transportation"
+                android:layout_below="@+id/v2"
+                android:gravity="center"
+                android:text="@string/description"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/show_Discription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/gender"
+                android:layout_alignRight="@+id/v3"
+                android:layout_below="@+id/qu"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+
+            <View
+                android:id="@+id/v3"
+                style="@style/view_bar"
+                android:layout_below="@+id/show_Discription"
+                android:layout_margin="15dp" />
+
+            <View
+                android:id="@+id/v4"
+                style="@style/view_bar"
+                android:layout_below="@+id/show_job_requirement"
+                android:layout_margin="15dp" />
+
+            <TextView
+                android:id="@+id/show_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/transportation"
+                android:layout_below="@+id/v4"
+                android:gravity="center"
+                android:text="@string/job_detailsummary"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/setSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/gender"
+                android:layout_alignRight="@+id/v3"
+                android:layout_below="@+id/show_summary"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:minHeight="90dp"
+                android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+
+            <TextView
+                android:id="@+id/wo"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/transportation"
+                android:layout_below="@+id/v3"
+                android:gravity="center"
+                android:text="@string/job_detail_work_exp"
+                android:textColor="#000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/show_job_requirement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/gender"
+                android:layout_alignRight="@+id/v3"
+                android:layout_below="@+id/wo"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+
+            <Button
+                android:id="@+id/ApplyButton"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/setSummary"
+                android:layout_margin="15dp"
+                android:textSize="@dimen/text_size_small"
+                android:text="@string/Apply"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_plain" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view_v3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/toolbar_background" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="90dp"
+        android:textSize="@dimen/text_size_small"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/btn_green_light2"
+        android:text="@string/Back"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

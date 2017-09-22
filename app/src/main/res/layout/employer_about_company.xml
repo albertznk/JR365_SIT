@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/aboutCompanyProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_v3">
+
+        <RelativeLayout
+
+            android:id="@+id/aboutCompanyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/setCompanyLogo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="35dp"
+                android:background="#c8c9c9" />
+
+            <TextView
+                android:id="@+id/empCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/setCompanyLogo"
+                android:layout_toRightOf="@+id/setCompanyLogo"
+                android:gravity="center_vertical"
+                android:text="Company Name Co.,ltd"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/setCompanyContact"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/empCompanyName"
+                android:layout_below="@+id/empCompanyName"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="09 7865567766, 09 xxxxxxxxx"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/setCompanyMail"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/empCompanyName"
+                android:layout_below="@+id/setCompanyContact"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="example@mail.com,info@mail.com"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/setCompanyAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/empCompanyName"
+                android:layout_below="@+id/setCompanyMail"
+                android:maxLines="2"
+                android:text="No.10,Parami Rd,Thamine Tsp.,Yangon,Myanmar."
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/businessType"
+                style="@style/Company_Detail"
+                android:layout_alignTop="@+id/setCompanyBusinessType"
+                android:text="@string/Business_Type" />
+
+            <TextView
+                android:id="@+id/setCompanyBusinessType"
+                style="@style/Set_Company_Detail"
+                android:layout_below="@+id/setCompanyAddress"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:text="Information Techonology" />
+
+            <TextView
+                android:id="@+id/primaryContactPerson"
+                style="@style/Company_Detail"
+                android:layout_below="@+id/businessType"
+                android:singleLine="true"
+                android:text="@string/no_start_c_pri_person" />
+
+            <TextView
+                android:id="@+id/setCompanyCoPerson"
+                style="@style/Set_Company_Detail"
+                android:layout_below="@+id/setCompanyBusinessType"
+                android:text="U Than Tun" />
+
+            <TextView
+                android:id="@+id/mobile"
+                style="@style/Company_Detail"
+                android:layout_below="@+id/primaryContactPerson"
+                android:text="@string/no_c_Telephone" />
+
+            <TextView
+                android:id="@+id/setMobilePrimary"
+                style="@style/Set_Company_Detail"
+                android:layout_below="@+id/setCompanyCoPerson"
+                android:text="09 79664635" />
+
+            <TextView
+                android:id="@+id/secondaryContactPerson"
+                style="@style/Company_Detail"
+                android:layout_below="@+id/mobile"
+                android:singleLine="true"
+                android:text="@string/post_c_sec_person" />
+
+            <TextView
+                android:id="@+id/setCompanySePerson"
+                style="@style/Set_Company_Detail"
+                android:layout_below="@+id/setMobilePrimary"
+                android:text="U Zaw Myo" />
+
+            <TextView
+                android:id="@+id/mobile2"
+                style="@style/Company_Detail"
+                android:layout_below="@+id/secondaryContactPerson"
+                android:text="@string/post_c_TTelephone" />
+
+            <TextView
+                android:id="@+id/setMobileSecondary"
+                style="@style/Set_Company_Detail"
+                android:layout_below="@+id/setCompanySePerson"
+                android:text="09 265453287" />
+
+            <View
+                android:id="@+id/v1"
+                style="@style/view_bar"
+                android:layout_below="@+id/mobile2"
+                android:layout_margin="15dp" />
+
+            <TextView
+                android:id="@+id/abc"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/v1"
+                android:layout_below="@+id/v1"
+                android:gravity="center"
+                android:text="@string/company_about"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/setAboutCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/abc"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="top"
+                android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+
+            <Button
+                android:id="@+id/modifyCompany"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/setAboutCompany"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_plain"
+                android:text="@string/Modify"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view_v3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/toolbar_background" />
+
+    <Button
+        android:gravity="center"
+        android:id="@+id/backButton"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/btn_green_light2"
+        android:text="@string/Back"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="14sp" />
+</RelativeLayout>
+

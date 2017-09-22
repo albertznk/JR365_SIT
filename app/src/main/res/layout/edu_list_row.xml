@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel33"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_toLeftOf="@+id/edu_edit"
+        android:id="@+id/tv_uni"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:height="30dp"
+        android:text="Lolz"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tv_degree"
+        android:layout_toLeftOf="@+id/edu_edit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_uni"
+        android:layout_weight="1"
+        android:text="Lolz"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tv_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_degree"
+        android:layout_weight="1"
+        android:text="Lolz"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tv_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_degree"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/tv_start_date"
+        android:layout_weight="1"
+        android:text="Lolz"
+        android:textColor="#000" />
+
+
+    <ImageView
+        android:id="@+id/edu_edit"
+        android:layout_toLeftOf="@+id/edu_delete"
+        android:layout_width="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="30dp"
+        android:layout_weight=".3"
+        android:src="@drawable/ic_create_black_24dp" />
+
+    <ImageView
+        android:id="@+id/edu_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_weight=".3"
+        android:src="@mipmap/fuck_off" />
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/empr_register_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/more_text"
+            android:gravity="start"
+            android:text="@string/more_registered_mobile_no" />
+
+        <TextView
+            android:id="@+id/tv_empr_register_no"
+            style="@style/more_text"
+            android:gravity="end"
+            android:text="WW" />
+    </RelativeLayout>
+
+    <View style="@style/move_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/change_language"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/more_change_language"
+            android:textColor="#000"
+            android:textSize="@dimen/text_size_medium"
+            android:typeface="serif" />
+
+        <RadioGroup
+
+            android:id="@+id/empr_more_rgp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/empr_radio_english"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/more_english" />
+
+            <RadioButton
+                android:id="@+id/empr_radio_myanmar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/more_myanmar" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View style="@style/move_view" />
+
+
+    <LinearLayout
+        android:id="@+id/empr_upgradetv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/upgrade_history"
+            style="@style/more_text"
+            android:text="@string/upgrade_history" />
+    </LinearLayout>
+
+    <View style="@style/move_view" />
+
+    <LinearLayout
+        android:id="@+id/empr_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/emp_fb"
+            style="@style/more_text"
+            android:text="@string/more_Feedback" />
+    </LinearLayout>
+
+    <View style="@style/move_view" />
+
+    <LinearLayout
+        android:id="@+id/empr_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_empr_policy"
+            style="@style/more_text"
+            android:text="@string/more_Policy" />
+
+    </LinearLayout>
+
+    <View style="@style/move_view" />
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/employer_callhot"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_empr_callhot"-->
+            <!--style="@style/more_text"-->
+            <!--android:text="@string/more_log_out" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<View style="@style/move_view" />-->
+    <LinearLayout
+        android:id="@+id/employer_LogOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_empr_logout"
+            style="@style/more_text"
+            android:text="@string/more_log_out" />
+
+    </LinearLayout>
+
+    <View style="@style/move_view" />
+</LinearLayout>

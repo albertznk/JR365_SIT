@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:srcCompat="@drawable/icon_and_button_20"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resume_qualification"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <EditText
+        android:id="@+id/editText_other_center_name"
+        style="@style/dialog_text_view"
+        android:hint="@string/center_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edittext_other_course"
+        style="@style/dialog_text_view"
+        android:hint="@string/course"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView_other_start_date"
+        style="@style/dialog_text_view"
+        android:hint="@string/start_date"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_other_end_date"
+        style="@style/dialog_text_view"
+        android:hint="@string/end_date"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_post_qualification"
+            android:layout_marginRight="5dp"
+            style="@style/dialog_btn"
+            android:text="@string/Upload" />
+        <!-- Record video button -->
+
+        <Button
+            android:id="@+id/btn_dismiss_qualification"
+            android:layout_marginLeft="5dp"
+            style="@style/dialog_btn"
+            android:text="@string/Cancel1" />
+    </LinearLayout>
+</LinearLayout>

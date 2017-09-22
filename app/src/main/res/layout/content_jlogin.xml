@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.goldenictsolutions.win.goldenictjob365.JLoginActivity"
+    tools:showIn="@layout/activity_jlogin">
+
+
+    <!-- Email Label -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="24dp"
+        android:src="@mipmap/true_logo" />
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:background="@drawable/edit"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/project_green_dark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:maxLength="13"
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Login"
+            android:background="@drawable/edit3"
+            android:backgroundTint="#cecac3c3"
+            android:inputType="phone"
+            android:hint="@string/Login_Mobile"
+            android:padding="10dp"
+            android:textAllCaps="false" />
+
+
+        <!-- Password Label -->
+
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_email"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit2"
+            android:hint="@string/Login_Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_password"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/Login"
+            android:textColor="@color/project_green_dark"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Forget"
+                android:textColor="@color/project_green_dark"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/tv_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:text="@string/Sing_up"
+                android:textColor="@color/project_green_dark"
+                android:textSize="16dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:tabIndicatorColor="@color/colorProjectDark">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/more_english" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_myanmar" />
+    </android.support.design.widget.TabLayout>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/swiper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_margin="10dp"
+            android:text="@string/relevant_job"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/project_green_dark"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:textColor="@color/project_green_dark"
+            android:text="@string/remaintime"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/employee_remaining"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/employee_remaining"
+            android:visibility="gone"
+            android:id="@+id/error_TextView"
+            android:elevation="100dp"
+            android:textColor="#09c41f"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:text=" Error \n##############################\n Data Downloading did't success \n Check Your Connection \n and then Swipe down to refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/employee_remaining"
+            android:visibility="invisible"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

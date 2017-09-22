@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/yangon" android:title="Yangon"/>
+        <item android:id="@+id/Magwe" android:title="Magwe"/>
+        <item android:id="@+id/sagaing" android:title="Sagaing"/>
+        <item android:id="@+id/ayerwaddy" android:title="Ayerwaddy"/>
+        <item android:id="@+id/mandalay" android:title="Mandalay"/>
+        <item android:id="@+id/bago" android:title="Bago"/>
+        <item android:id="@+id/Rakhaing" android:title="Rakaing"/>
+        <item android:id="@+id/mon_state" android:title="Mon State"/>
+        <item android:id="@+id/kachin" android:title="Kachin State"/>
+        <item android:id="@+id/kayin" android:title="Kayin State"/>
+        <item android:id="@+id/kayar" android:title="Kayar State"/>
+        <item android:id="@+id/shan" android:title="Shan State"/>
+        <item android:id="@+id/chin" android:title="Chin State"/>
+</menu>

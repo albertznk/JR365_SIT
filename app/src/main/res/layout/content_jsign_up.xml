@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    android:paddingBottom="20dp"
+    tools:context="com.goldenictsolutions.win.goldenictjob365.JSignUpActivity"
+    tools:showIn="@layout/activity_jsign_up">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="24dp"
+            android:src="@mipmap/true_logo" />
+
+        <RelativeLayout
+            android:id="@+id/relative3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:background="@drawable/edit"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/SignUp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/project_green_dark"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign_up"
+                android:gravity="center"
+                android:elevation="100dp"
+                android:background="#c1c1c2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_button_sign_up_employee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:paddingRight="50dp"
+                    android:text="@string/Employee"
+                    android:textColor="@color/project_green_dark" />
+                android:textColor="@color/colorAccent" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_sign_up_employer"
+                    style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/Employer"
+                    android:textColor="@color/project_green_dark" />
+            </RadioGroup>
+
+            <EditText
+                android:maxLength="13"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_medium"
+                android:id="@+id/input_email_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_group_sign_up"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit3"
+                android:hint="@string/Phone_Number"
+                android:inputType="phone"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/input_password_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_email_sign_up"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit2"
+                android:textSize="@dimen/text_size_medium"
+                android:hint="@string/Password"
+                android:maxLength="15"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/input_verify_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_password_sign_up"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit2"
+                android:hint="@string/Verify_Password"
+                android:textSize="@dimen/text_size_medium"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btn_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_verify_password"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/Registration"
+                android:textSize="@dimen/text_size_medium"
+                android:textAllCaps="false"
+                android:textColor="@color/project_green_dark" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout_language_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:tabIndicatorColor="@color/colorProjectDark">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_english" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_myanmar" />
+
+    </android.support.design.widget.TabLayout>
+
+</RelativeLayout>

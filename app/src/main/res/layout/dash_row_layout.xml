@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dash_row_relative"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/empr_between_layout"
+    android:layout_height="100dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/employer_logo"
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:src="@drawable/jobready365logo"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/jobType"
+            style="@style/dash_row_style"
+            android:text="job type" />
+
+        <TextView
+            android:layout_below="@+id/jobType"
+            android:id="@+id/companyName"
+            style="@style/dash_row_style"
+            android:text="Company_Name"
+            android:textColor="#50B748" />
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/companyLocation"
+            style="@style/dash_row_style"
+            android:layout_below="@+id/companyName"
+            android:text="Location"
+            android:textColor="#50B748" />
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

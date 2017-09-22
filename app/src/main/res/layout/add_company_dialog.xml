@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorProjectDark"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+
+        android:layout_margin="5dp"
+        android:id="@+id/linearrrrr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:background="@drawable/upgrade_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/project_green_dark"
+                app:ms_arrowSize="9dp"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="false"
+                app:ms_floatingLabelText="floating label"
+                app:ms_hintColor="@color/colorGray"
+                app:ms_thickness="0dp"
+                android:layout_margin="5dp"
+                android:id="@+id/package_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_below="@+id/linearrrrr"
+        android:layout_margin="5dp"
+        android:id="@+id/code_edit"
+        android:background="@drawable/upgrade_background"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:maxLength="15"
+        android:layout_height="35dp"
+        android:hint="@string/upgrade_key" />
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/code_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/confirmBTN"
+            android:layout_marginBottom="10dp"
+            android:layout_width="100dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_plain"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/upgrade_package_upgrade"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_toRightOf="@+id/confirmBTN"
+            android:id="@+id/cancellBTN"
+            android:layout_marginBottom="10dp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_plain"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/upgrade_package_cancel"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/appointRowDescription"
+        android:text="Description   :"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/appointRowContactInfo"
+        android:layout_below="@+id/appointRowDescriptionDo"
+        android:text="Contact Info  :"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_below="@+id/appointRowContactInfoDo"
+        android:id="@+id/appointRowContactNo"
+        android:text="Contact No    :"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_toRightOf="@id/appointRowDescription"
+        android:id="@+id/appointRowDescriptionDo"
+        android:text="Hello what up I wannna to do some thing what youjsjflsljfljsljfdsjsjljfdfjlsj"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/appointRowContactInfoDo"
+        android:layout_toRightOf="@id/appointRowContactInfo"
+        android:layout_below="@id/appointRowDescriptionDo"
+        android:text="lkajfljdkljlfjlkslfjlksjljflsjljfsjfljsljflsjlfjlsjljlsjlfjlsjlfjlsjlfjlsjflsjljflskfjlsjlfjlsjfljsljfljsljflsljflsjjflsfjlsjlfsjljfsjlfs"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_toRightOf="@id/appointRowContactInfo"
+        android:layout_below="@+id/appointRowContactInfoDo"
+        android:id="@+id/appointRowContactNoDo"
+        android:text="ajfljlsjklfjsjfjlksjlfjklsjlfjlksjlkfjlsjlfjsljfjskljfklsjklfjklsjkfjksjfljskljfkljsklkfjskljfjsklfjksjkfjskljfkjdksjfkjskljflkjslkjflsjfklsjklfjlkdsjjlksjflsljfsljlfjlf"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    <View
+        android:layout_margin="10dp"
+        android:layout_below="@+id/appointRowContactNoDo"
+        style="@style/view_bar"
+        />
+</RelativeLayout>

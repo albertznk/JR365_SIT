@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/aboutCompanyProgressBar"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_above="@+id/view_v3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/aboutCompanyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/icon_and_button_06"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/setCompanyLogo"
+                android:layout_margin="35dp"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/empCompanyName"
+                android:textSize="14sp"
+                android:text="Company Name Co.,ltd"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_alignTop="@+id/setCompanyLogo"
+                android:layout_toRightOf="@+id/setCompanyLogo"/>
+            <TextView
+                android:id="@+id/setCompanyContact"
+                android:text="09 7865567766, 09 xxxxxxxxx"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:layout_alignLeft="@+id/empCompanyName"
+                android:layout_height="25dp"
+                android:layout_below="@+id/empCompanyName"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/setCompanyMail"
+                android:text="example@mail.com,info@mail.com"
+                android:layout_height="25dp"
+                android:textSize="14sp"
+                android:layout_below="@+id/setCompanyContact"
+                android:layout_width="wrap_content"
+                android:layout_alignLeft="@+id/empCompanyName"
+                />
+            <TextView
+                android:id="@+id/setCompanyAddress"
+                android:text="No.10,Parami Rd,Thamine Tsp.,Yangon,Myanmar."
+                android:layout_below="@+id/setCompanyMail"
+                android:layout_alignLeft="@+id/empCompanyName"
+                android:layout_width="match_parent"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/businessType"
+                android:text="@string/Business_Type"
+                style="@style/Company_Detail"
+                android:layout_alignTop="@+id/setCompanyBusinessType"/>
+            <TextView
+                android:layout_toRightOf="@+id/businessType"
+                android:id="@+id/setCompanyBusinessType"
+                android:text="Information Techonology"
+                style="@style/Set_Company_Detail"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/setCompanyAddress"/>
+            <TextView
+                android:id="@+id/primaryContactPerson"
+                android:text="@string/no_start_c_pri_person"
+                style="@style/Company_Detail"
+                android:layout_below="@+id/businessType"/>
+            <TextView
+                android:layout_toRightOf="@+id/primaryContactPerson"
+                android:id="@+id/setCompanyCoPerson"
+                android:text="U Than Tun"
+                style="@style/Set_Company_Detail"
+                android:layout_below="@+id/setCompanyBusinessType"/>
+            <TextView
+                android:id="@+id/mobile"
+                android:text="@string/no_c_Telephone"
+                style="@style/Company_Detail"
+                android:layout_below="@+id/primaryContactPerson"/>
+            <TextView
+                android:layout_toRightOf="@+id/mobile"
+                android:id="@+id/setMobilePrimary"
+                android:text="09 79664635"
+                style="@style/Set_Company_Detail"
+                android:layout_below="@+id/setCompanyCoPerson"/>
+            <TextView
+                android:id="@+id/secondaryContactPerson"
+                android:text="@string/post_c_sec_person"
+                style="@style/Company_Detail"
+                android:layout_below="@+id/mobile"/>
+            <TextView
+                android:layout_toRightOf="@+id/secondaryContactPerson"
+                android:id="@+id/setCompanySePerson"
+                android:text="U Zaw Myo"
+                style="@style/Set_Company_Detail"
+                android:layout_below="@+id/setMobilePrimary"/>
+            <TextView
+                android:id="@+id/mobile2"
+                android:text="@string/post_c_TTelephone"
+                style="@style/Company_Detail"
+                android:layout_below="@+id/secondaryContactPerson"/>
+            <TextView
+                android:layout_toRightOf="@+id/mobile2"
+                android:id="@+id/setMobileSecondary"
+                android:text="09 265453287"
+                style="@style/Set_Company_Detail"
+                android:layout_below="@+id/setCompanySePerson"/>
+            <View
+                android:id="@+id/v1"
+                style="@style/view_bar"
+                android:layout_margin="15dp"
+                android:layout_below="@+id/mobile2"
+                />
+            <TextView
+                android:id="@+id/abc"
+                android:gravity="center"
+                android:text="@string/company_about"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/v1"
+                android:layout_alignLeft="@+id/v1"/>
+            <TextView
+                android:id="@+id/setAboutCompany"
+                android:layout_margin="20dp"
+                android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                android:layout_width="match_parent"
+                android:gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/abc"
+                android:layout_marginBottom="30dp"/>
+        </RelativeLayout>
+    </ScrollView>
+    <View
+        android:id="@+id/view_v3"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/toolbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <Button
+        android:id="@+id/backButton"
+        android:background="@drawable/btn_green_light2"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:textAllCaps="false"
+        android:text="@string/Back"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+

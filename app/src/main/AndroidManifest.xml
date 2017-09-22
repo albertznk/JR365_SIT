@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goldenictsolutions.win.goldenictjob365">
+
+    <!-- Accessing camera hardware -->
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/true_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.commonfile.Register_confirm"
+            android:configChanges="locale"
+            android:label="JobReady365"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employer.EmployerActivity.EmployerModifyJob"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employer.EmployerActivity.EmployerFragHost"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.View_Web_CV"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employee.ActivityCollection.AboutCompany"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employee.ActivityCollection.ShowDetailJob"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employee.ActivityCollection.AppliedJobHistory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.JLoginActivity"
+            android:label="@string/title_activity_jlogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.JSignUpActivity"
+            android:label="@string/title_activity_jsign_up"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employee.ActivityCollection.JForgetpassword"
+            android:label="@string/title_activity_jsign_up"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.JPolicy"
+            android:label="@string/title_activity_jpolicy"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employee.JResumeActivity"
+            android:label="@string/title_activity_jresume"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employee.ActivityCollection.AppointmentRecord"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employee.ActivityCollection.ContentHost"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employee.ActivityCollection.ModifyCvActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employer.EmployerActivity.EmployerAboutCompany"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employer.EmployerActivity.EmployerProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employer.EmployerActivity.EmployerViewApplicant"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employer.EmployerActivity.CandidateView"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Employer.EmployerActivity.JobOpenning"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.Policy_FromApp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.commonfile.Feedback_Form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.goldenictsolutions.win.goldenictjob365.commonfile.AddNewpswd"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--<activity android:name="com.goldenictsolutions.win.goldenictjob365.commonfile.Register_confirm"-->
+            <!--android:theme="@style/AppTheme.NoActionBar"></activity>-->
+    </application>
+
+</manifest>

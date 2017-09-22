@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="@string/no_start_Business_Name"
+        android:textColor="@color/stringColor"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/shortlist_remain_time"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/shortlist_package_type"
+        />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/shortlist_package_type"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/packageUpgradeButton"
+        android:gravity="center"
+        android:text="Basic"
+        android:textColor="#000"
+        android:textSize="10sp" />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/packageUpgradeButton"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Upgrade"
+        android:textAllCaps="false"
+        android:textSize="10sp" />
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/packageUpgradeButton"
+        android:layout_margin="10dp"
+        android:background="@color/stringColor" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/v1"
+        android:layout_marginLeft="15dp">
+
+        <Spinner
+            android:id="@+id/shorlistCompNmaeSpinner"
+            android:layout_width="match_parent"
+
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/stringColor"
+            android:minWidth="160dp" />
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/cv2"
+        android:layout_margin="10dp"
+        android:background="@color/stringColor" />
+
+    <TextView
+        android:id="@+id/jobOpenText"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/v2"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="@string/empr_Job_Opening"
+        android:textColor="@color/stringColor"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/v2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/Candidate"
+        android:textColor="@color/stringColor"
+        android:textSize="@dimen/text_size_medium" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/jobOpenText"
+        android:layout_margin="2dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="#f5f4f4"
+        app:cardCornerRadius="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <ProgressBar
+                    android:id="@+id/shorlistprogressBar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/shorlistRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/shorlistprogressBar"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/shorlistRecyclerView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:elevation="15dp"
+                    app:cardBackgroundColor="#f9f6f6"
+                    app:cardCornerRadius="30dp">
+
+                    <FrameLayout
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/fooder_logo" />
+
+                        <TextView
+                            android:id="@+id/shortlist_job_count"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="1000"
+                            android:textColor="#000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
